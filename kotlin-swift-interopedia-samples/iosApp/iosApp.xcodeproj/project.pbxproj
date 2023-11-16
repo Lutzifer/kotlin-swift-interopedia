@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
+		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
+		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
+		662673B02AB28FBF009934DD /* FunctionWithExtensionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662673AF2AB28FBF009934DD /* FunctionWithExtensionExample.swift */; };
+		665A18952A9614E9000087BE /* FunctionReturnsLambda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665A18942A9614E9000087BE /* FunctionReturnsLambda.swift */; };
+		665A18972A961812000087BE /* FunctionReturnsPrimitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665A18962A961812000087BE /* FunctionReturnsPrimitive.swift */; };
+		669CC6102AEA910900DC4B6E /* PublicApiExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CC60F2AEA910800DC4B6E /* PublicApiExample.swift */; };
+		669CC6122AEE9CC200DC4B6E /* SuspendFunctionKMPNativeCoroutinesWithCancellationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CC6112AEE9CC200DC4B6E /* SuspendFunctionKMPNativeCoroutinesWithCancellationExample.swift */; };
+		669CC6142AEE9E2000DC4B6E /* FlowKMPNativeCoroutinesWithCancellationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CC6132AEE9E2000DC4B6E /* FlowKMPNativeCoroutinesWithCancellationExample.swift */; };
+		669CC6162AEF9B4000DC4B6E /* CollectionsWithBasicTypesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CC6152AEF9B4000DC4B6E /* CollectionsWithBasicTypesExample.swift */; };
+		669CC61C2AEF9F0100DC4B6E /* FlowWithCancellationException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CC61B2AEF9F0100DC4B6E /* FlowWithCancellationException.swift */; };
+		669CC61E2AEF9F5400DC4B6E /* SuspendFunctionWithCancellationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CC61D2AEF9F5400DC4B6E /* SuspendFunctionWithCancellationExample.swift */; };
+		669CC6202AEFA0CB00DC4B6E /* SuspendFunctionCompletionHandlerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CC61F2AEFA0CB00DC4B6E /* SuspendFunctionCompletionHandlerExample.swift */; };
+		669CC6252AF1480A00DC4B6E /* UsualClassFunctionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CC6242AF1480A00DC4B6E /* UsualClassFunctionExample.swift */; };
+		66CD09082A780B0C00D66EFD /* AbstractClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD09072A780B0C00D66EFD /* AbstractClass.swift */; };
+		66CD090A2A78109A00D66EFD /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD09092A78109A00D66EFD /* DataClass.swift */; };
+		66CD090E2A79052C00D66EFD /* EnumClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD090D2A79052C00D66EFD /* EnumClass.swift */; };
+		66CD09102A790BEC00D66EFD /* InnerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD090F2A790BEC00D66EFD /* InnerClass.swift */; };
+		66CD09122A790D9900D66EFD /* OpenClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD09112A790D9900D66EFD /* OpenClass.swift */; };
+		66CD09142A790FF300D66EFD /* SealedClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD09132A790FF300D66EFD /* SealedClass.swift */; };
+		66CD09162A7925B800D66EFD /* FunctionWithReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD09152A7925B800D66EFD /* FunctionWithReceiver.swift */; };
+		66D4CCD82AD6835D00552E0E /* FunctionWithLambdaArgsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCD72AD6835D00552E0E /* FunctionWithLambdaArgsExample.swift */; };
+		66D4CCDC2AD6B77B00552E0E /* FunctionWithValueClassParameterExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCDB2AD6B77B00552E0E /* FunctionWithValueClassParameterExample.swift */; };
+		66D4CCDE2AD6BB2C00552E0E /* FunctionWithVarargParameterExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCDD2AD6BB2C00552E0E /* FunctionWithVarargParameterExample.swift */; };
+		66D4CCE02AD6BDA400552E0E /* FunctionsWithOverloadsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCDF2AD6BDA400552E0E /* FunctionsWithOverloadsExample.swift */; };
+		66D4CCE22AD6BF4700552E0E /* FunctionsWithOverloadsExample2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCE12AD6BF4700552E0E /* FunctionsWithOverloadsExample2.swift */; };
+		66D4CCE42AD6D4C100552E0E /* InlineFunctionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCE32AD6D4C100552E0E /* InlineFunctionExample.swift */; };
+		66D4CCE62AD6DDC400552E0E /* SuspendFunctionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCE52AD6DDC400552E0E /* SuspendFunctionExample.swift */; };
+		66D4CCE82AD6E26900552E0E /* SuspendFunctionKMPNativeCoroutinesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCE72AD6E26900552E0E /* SuspendFunctionKMPNativeCoroutinesExample.swift */; };
+		66D4CCEB2AD6E40F00552E0E /* KMPNativeCoroutinesAsync in Frameworks */ = {isa = PBXBuildFile; productRef = 66D4CCEA2AD6E40F00552E0E /* KMPNativeCoroutinesAsync */; };
+		66D4CCED2AD6E40F00552E0E /* KMPNativeCoroutinesCombine in Frameworks */ = {isa = PBXBuildFile; productRef = 66D4CCEC2AD6E40F00552E0E /* KMPNativeCoroutinesCombine */; };
+		66D4CCEF2AD6E40F00552E0E /* KMPNativeCoroutinesCore in Frameworks */ = {isa = PBXBuildFile; productRef = 66D4CCEE2AD6E40F00552E0E /* KMPNativeCoroutinesCore */; };
+		66D4CCF12AD6E40F00552E0E /* KMPNativeCoroutinesRxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 66D4CCF02AD6E40F00552E0E /* KMPNativeCoroutinesRxSwift */; };
+		66D4CCF62AD7EAF000552E0E /* BoundedGenericsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCF52AD7EAF000552E0E /* BoundedGenericsExample.swift */; };
+		66D4CCF82AD7EF7600552E0E /* ContravariantGenericsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCF72AD7EF7600552E0E /* ContravariantGenericsExample.swift */; };
+		66D4CCFA2AD7F24E00552E0E /* CovariantGenericsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCF92AD7F24E00552E0E /* CovariantGenericsExample.swift */; };
+		66D4CCFC2AD8095400552E0E /* GenericsClassesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCFB2AD8095400552E0E /* GenericsClassesExample.swift */; };
+		66D4CCFE2AD80F2B00552E0E /* GenericFunctionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCFD2AD80F2B00552E0E /* GenericFunctionsExample.swift */; };
+		66D4CD022AD813F700552E0E /* ReifiedFunctionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD012AD813F700552E0E /* ReifiedFunctionsExample.swift */; };
+		66D4CD042AD81B6F00552E0E /* StarProjectionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD032AD81B6F00552E0E /* StarProjectionExample.swift */; };
+		66D4CD062AD90CF900552E0E /* CompanionObjectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD052AD90CF900552E0E /* CompanionObjectExample.swift */; };
+		66D4CD082AD9173F00552E0E /* ConstructorWithDefaultArgumentsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD072AD9173F00552E0E /* ConstructorWithDefaultArgumentsExample.swift */; };
+		66D4CD0C2AD91EFF00552E0E /* ExtensionFunctionOverPlatformClassExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD0B2AD91EFF00552E0E /* ExtensionFunctionOverPlatformClassExample.swift */; };
+		66D4CD0E2AD9225000552E0E /* ExtensionFunctionOverUsualClassExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD0D2AD9225000552E0E /* ExtensionFunctionOverUsualClassExample.swift */; };
+		66D4CD122AD9251200552E0E /* ExtensionPropertyCompanionObjectPlatformClassExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD112AD9251200552E0E /* ExtensionPropertyCompanionObjectPlatformClassExample.swift */; };
+		66D4CD142AD928B600552E0E /* ExtensionPropertyCompanionObjectUsualClassExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD132AD928B600552E0E /* ExtensionPropertyCompanionObjectUsualClassExample.swift */; };
+		66D4CD162AD9318400552E0E /* ExtensionPropertyPlatformClassExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD152AD9318400552E0E /* ExtensionPropertyPlatformClassExample.swift */; };
+		66D4CD182AD947BB00552E0E /* ExtensionPropertyUsualClassExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD172AD947BB00552E0E /* ExtensionPropertyUsualClassExample.swift */; };
+		66D4CD1A2AD94B0A00552E0E /* FunctionWithDefaultArgumentsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD192AD94B0A00552E0E /* FunctionWithDefaultArgumentsExample.swift */; };
+		66D4CD1C2AD9568500552E0E /* ObjectsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD1B2AD9568500552E0E /* ObjectsExample.swift */; };
+		66D4CD1E2AD9587900552E0E /* TopLevelFunctionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD1D2AD9587900552E0E /* TopLevelFunctionExample.swift */; };
+		66D4CD202AD95B5100552E0E /* TopLevelPropertyExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD1F2AD95B5100552E0E /* TopLevelPropertyExample.swift */; };
+		66D4CD222AD95DC900552E0E /* TopLevelPropertyMutableExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD212AD95DC900552E0E /* TopLevelPropertyMutableExample.swift */; };
+		66D4CD242AD960B000552E0E /* UsualClassConstructorExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD232AD960B000552E0E /* UsualClassConstructorExample.swift */; };
+		66D4CD282AD97BBD00552E0E /* UsualClassValPropertyExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD272AD97BBC00552E0E /* UsualClassValPropertyExample.swift */; };
+		66D4CD2A2AD97D1200552E0E /* UsualClassPropertyMutableExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD292AD97D1200552E0E /* UsualClassPropertyMutableExample.swift */; };
+		66D4CD2D2AD9812500552E0E /* FunInterfacesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD2C2AD9812500552E0E /* FunInterfacesExample.swift */; };
+		66D4CD2F2AD9852D00552E0E /* InterfacesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD2E2AD9852D00552E0E /* InterfacesExample.swift */; };
+		66D4CD312ADA8A9800552E0E /* SealedInterfacesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD302ADA8A9800552E0E /* SealedInterfacesExample.swift */; };
+		66D4CD362ADAC66700552E0E /* CollectionsWithCustomTypesDataExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD352ADAC66700552E0E /* CollectionsWithCustomTypesDataExample.swift */; };
+		66D4CD382ADACB4B00552E0E /* CollectionsWithBasicTypesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD372ADACB4B00552E0E /* CollectionsWithBasicTypesExample.swift */; };
+		66D4CD3A2ADAD3B200552E0E /* MutableImmutableCollectionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD392ADAD3B200552E0E /* MutableImmutableCollectionsExample.swift */; };
+		66D4CD3C2ADB50F200552E0E /* UnitNothingExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD3B2ADB50F200552E0E /* UnitNothingExample.swift */; };
+		66D4CD3E2ADB548B00552E0E /* BasicTypesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD3D2ADB548B00552E0E /* BasicTypesExample.swift */; };
+		66D4CD402ADB5A8200552E0E /* OptionalBasicTypesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD3F2ADB5A8200552E0E /* OptionalBasicTypesExample.swift */; };
+		66D4CD442ADD715400552E0E /* FlowKMPNativeCoroutinesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD432ADD715400552E0E /* FlowKMPNativeCoroutinesExample.swift */; };
+		66D4CD482ADD784F00552E0E /* FlowExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD472ADD784F00552E0E /* FlowExample.swift */; };
+		66D4CD4C2ADEA4C000552E0E /* ExceptionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD4B2ADEA4C000552E0E /* ExceptionsExample.swift */; };
+		7535496A2AE116ED0016A54B /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753549692AE116ED0016A54B /* ResultView.swift */; };
+		7535496C2AE1376C0016A54B /* InteropSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7535496B2AE1376C0016A54B /* InteropSamples.swift */; };
+		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7555FFB4242A642300829871 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		058557BA273AAA24004C7B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
+		662673AF2AB28FBF009934DD /* FunctionWithExtensionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionWithExtensionExample.swift; sourceTree = "<group>"; };
+		665A18942A9614E9000087BE /* FunctionReturnsLambda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionReturnsLambda.swift; sourceTree = "<group>"; };
+		665A18962A961812000087BE /* FunctionReturnsPrimitive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionReturnsPrimitive.swift; sourceTree = "<group>"; };
+		669CC60F2AEA910800DC4B6E /* PublicApiExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicApiExample.swift; sourceTree = "<group>"; };
+		669CC6112AEE9CC200DC4B6E /* SuspendFunctionKMPNativeCoroutinesWithCancellationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspendFunctionKMPNativeCoroutinesWithCancellationExample.swift; sourceTree = "<group>"; };
+		669CC6132AEE9E2000DC4B6E /* FlowKMPNativeCoroutinesWithCancellationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowKMPNativeCoroutinesWithCancellationExample.swift; sourceTree = "<group>"; };
+		669CC6152AEF9B4000DC4B6E /* CollectionsWithBasicTypesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsWithBasicTypesExample.swift; sourceTree = "<group>"; };
+		669CC61B2AEF9F0100DC4B6E /* FlowWithCancellationException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowWithCancellationException.swift; sourceTree = "<group>"; };
+		669CC61D2AEF9F5400DC4B6E /* SuspendFunctionWithCancellationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspendFunctionWithCancellationExample.swift; sourceTree = "<group>"; };
+		669CC61F2AEFA0CB00DC4B6E /* SuspendFunctionCompletionHandlerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspendFunctionCompletionHandlerExample.swift; sourceTree = "<group>"; };
+		669CC6242AF1480A00DC4B6E /* UsualClassFunctionExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsualClassFunctionExample.swift; sourceTree = "<group>"; };
+		66CD09072A780B0C00D66EFD /* AbstractClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractClass.swift; sourceTree = "<group>"; };
+		66CD09092A78109A00D66EFD /* DataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClass.swift; sourceTree = "<group>"; };
+		66CD090D2A79052C00D66EFD /* EnumClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumClass.swift; sourceTree = "<group>"; };
+		66CD090F2A790BEC00D66EFD /* InnerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerClass.swift; sourceTree = "<group>"; };
+		66CD09112A790D9900D66EFD /* OpenClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenClass.swift; sourceTree = "<group>"; };
+		66CD09132A790FF300D66EFD /* SealedClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SealedClass.swift; sourceTree = "<group>"; };
+		66CD09152A7925B800D66EFD /* FunctionWithReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionWithReceiver.swift; sourceTree = "<group>"; };
+		66D4CCD72AD6835D00552E0E /* FunctionWithLambdaArgsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionWithLambdaArgsExample.swift; sourceTree = "<group>"; };
+		66D4CCDB2AD6B77B00552E0E /* FunctionWithValueClassParameterExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionWithValueClassParameterExample.swift; sourceTree = "<group>"; };
+		66D4CCDD2AD6BB2C00552E0E /* FunctionWithVarargParameterExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionWithVarargParameterExample.swift; sourceTree = "<group>"; };
+		66D4CCDF2AD6BDA400552E0E /* FunctionsWithOverloadsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsWithOverloadsExample.swift; sourceTree = "<group>"; };
+		66D4CCE12AD6BF4700552E0E /* FunctionsWithOverloadsExample2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsWithOverloadsExample2.swift; sourceTree = "<group>"; };
+		66D4CCE32AD6D4C100552E0E /* InlineFunctionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineFunctionExample.swift; sourceTree = "<group>"; };
+		66D4CCE52AD6DDC400552E0E /* SuspendFunctionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspendFunctionExample.swift; sourceTree = "<group>"; };
+		66D4CCE72AD6E26900552E0E /* SuspendFunctionKMPNativeCoroutinesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspendFunctionKMPNativeCoroutinesExample.swift; sourceTree = "<group>"; };
+		66D4CCF52AD7EAF000552E0E /* BoundedGenericsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundedGenericsExample.swift; sourceTree = "<group>"; };
+		66D4CCF72AD7EF7600552E0E /* ContravariantGenericsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContravariantGenericsExample.swift; sourceTree = "<group>"; };
+		66D4CCF92AD7F24E00552E0E /* CovariantGenericsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovariantGenericsExample.swift; sourceTree = "<group>"; };
+		66D4CCFB2AD8095400552E0E /* GenericsClassesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericsClassesExample.swift; sourceTree = "<group>"; };
+		66D4CCFD2AD80F2B00552E0E /* GenericFunctionsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericFunctionsExample.swift; sourceTree = "<group>"; };
+		66D4CD012AD813F700552E0E /* ReifiedFunctionsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReifiedFunctionsExample.swift; sourceTree = "<group>"; };
+		66D4CD032AD81B6F00552E0E /* StarProjectionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarProjectionExample.swift; sourceTree = "<group>"; };
+		66D4CD052AD90CF900552E0E /* CompanionObjectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionObjectExample.swift; sourceTree = "<group>"; };
+		66D4CD072AD9173F00552E0E /* ConstructorWithDefaultArgumentsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructorWithDefaultArgumentsExample.swift; sourceTree = "<group>"; };
+		66D4CD0B2AD91EFF00552E0E /* ExtensionFunctionOverPlatformClassExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionFunctionOverPlatformClassExample.swift; sourceTree = "<group>"; };
+		66D4CD0D2AD9225000552E0E /* ExtensionFunctionOverUsualClassExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionFunctionOverUsualClassExample.swift; sourceTree = "<group>"; };
+		66D4CD112AD9251200552E0E /* ExtensionPropertyCompanionObjectPlatformClassExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPropertyCompanionObjectPlatformClassExample.swift; sourceTree = "<group>"; };
+		66D4CD132AD928B600552E0E /* ExtensionPropertyCompanionObjectUsualClassExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPropertyCompanionObjectUsualClassExample.swift; sourceTree = "<group>"; };
+		66D4CD152AD9318400552E0E /* ExtensionPropertyPlatformClassExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPropertyPlatformClassExample.swift; sourceTree = "<group>"; };
+		66D4CD172AD947BB00552E0E /* ExtensionPropertyUsualClassExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPropertyUsualClassExample.swift; sourceTree = "<group>"; };
+		66D4CD192AD94B0A00552E0E /* FunctionWithDefaultArgumentsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionWithDefaultArgumentsExample.swift; sourceTree = "<group>"; };
+		66D4CD1B2AD9568500552E0E /* ObjectsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsExample.swift; sourceTree = "<group>"; };
+		66D4CD1D2AD9587900552E0E /* TopLevelFunctionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLevelFunctionExample.swift; sourceTree = "<group>"; };
+		66D4CD1F2AD95B5100552E0E /* TopLevelPropertyExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLevelPropertyExample.swift; sourceTree = "<group>"; };
+		66D4CD212AD95DC900552E0E /* TopLevelPropertyMutableExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLevelPropertyMutableExample.swift; sourceTree = "<group>"; };
+		66D4CD232AD960B000552E0E /* UsualClassConstructorExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsualClassConstructorExample.swift; sourceTree = "<group>"; };
+		66D4CD272AD97BBC00552E0E /* UsualClassValPropertyExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsualClassValPropertyExample.swift; sourceTree = "<group>"; };
+		66D4CD292AD97D1200552E0E /* UsualClassPropertyMutableExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsualClassPropertyMutableExample.swift; sourceTree = "<group>"; };
+		66D4CD2C2AD9812500552E0E /* FunInterfacesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunInterfacesExample.swift; sourceTree = "<group>"; };
+		66D4CD2E2AD9852D00552E0E /* InterfacesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfacesExample.swift; sourceTree = "<group>"; };
+		66D4CD302ADA8A9800552E0E /* SealedInterfacesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SealedInterfacesExample.swift; sourceTree = "<group>"; };
+		66D4CD352ADAC66700552E0E /* CollectionsWithCustomTypesDataExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsWithCustomTypesDataExample.swift; sourceTree = "<group>"; };
+		66D4CD372ADACB4B00552E0E /* CollectionsWithBasicTypesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsWithBasicTypesExample.swift; sourceTree = "<group>"; };
+		66D4CD392ADAD3B200552E0E /* MutableImmutableCollectionsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutableImmutableCollectionsExample.swift; sourceTree = "<group>"; };
+		66D4CD3B2ADB50F200552E0E /* UnitNothingExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitNothingExample.swift; sourceTree = "<group>"; };
+		66D4CD3D2ADB548B00552E0E /* BasicTypesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTypesExample.swift; sourceTree = "<group>"; };
+		66D4CD3F2ADB5A8200552E0E /* OptionalBasicTypesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalBasicTypesExample.swift; sourceTree = "<group>"; };
+		66D4CD432ADD715400552E0E /* FlowKMPNativeCoroutinesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowKMPNativeCoroutinesExample.swift; sourceTree = "<group>"; };
+		66D4CD472ADD784F00552E0E /* FlowExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowExample.swift; sourceTree = "<group>"; };
+		66D4CD4B2ADEA4C000552E0E /* ExceptionsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExceptionsExample.swift; sourceTree = "<group>"; };
+		753549692AE116ED0016A54B /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		7535496B2AE1376C0016A54B /* InteropSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteropSamples.swift; sourceTree = "<group>"; };
+		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7555FF78242A565900829871 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66D4CCEB2AD6E40F00552E0E /* KMPNativeCoroutinesAsync in Frameworks */,
+				66D4CCED2AD6E40F00552E0E /* KMPNativeCoroutinesCombine in Frameworks */,
+				66D4CCEF2AD6E40F00552E0E /* KMPNativeCoroutinesCore in Frameworks */,
+				66D4CCF12AD6E40F00552E0E /* KMPNativeCoroutinesRxSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		058557D7273AAEEB004C7B11 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		669CC6212AF12D1E00DC4B6E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				66D4CD0B2AD91EFF00552E0E /* ExtensionFunctionOverPlatformClassExample.swift */,
+				66D4CD0D2AD9225000552E0E /* ExtensionFunctionOverUsualClassExample.swift */,
+				66D4CD112AD9251200552E0E /* ExtensionPropertyCompanionObjectPlatformClassExample.swift */,
+				66D4CD132AD928B600552E0E /* ExtensionPropertyCompanionObjectUsualClassExample.swift */,
+				66D4CD152AD9318400552E0E /* ExtensionPropertyPlatformClassExample.swift */,
+				66D4CD172AD947BB00552E0E /* ExtensionPropertyUsualClassExample.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		66CD08FD2A71556800D66EFD /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				665A18962A961812000087BE /* FunctionReturnsPrimitive.swift */,
+				66D4CD1D2AD9587900552E0E /* TopLevelFunctionExample.swift */,
+				66D4CD4B2ADEA4C000552E0E /* ExceptionsExample.swift */,
+				669CC60F2AEA910800DC4B6E /* PublicApiExample.swift */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
+		66CD09062A780AF800D66EFD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				66D4CD052AD90CF900552E0E /* CompanionObjectExample.swift */,
+				66D4CD1B2AD9568500552E0E /* ObjectsExample.swift */,
+				66D4CD2C2AD9812500552E0E /* FunInterfacesExample.swift */,
+				66D4CD2E2AD9852D00552E0E /* InterfacesExample.swift */,
+				66D4CD302ADA8A9800552E0E /* SealedInterfacesExample.swift */,
+				66CD09072A780B0C00D66EFD /* AbstractClass.swift */,
+				66CD09092A78109A00D66EFD /* DataClass.swift */,
+				66CD090D2A79052C00D66EFD /* EnumClass.swift */,
+				66CD090F2A790BEC00D66EFD /* InnerClass.swift */,
+				66CD09112A790D9900D66EFD /* OpenClass.swift */,
+				66CD09132A790FF300D66EFD /* SealedClass.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		66CD090B2A78FD7800D66EFD /* MoreAboutFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				66D4CCDF2AD6BDA400552E0E /* FunctionsWithOverloadsExample.swift */,
+				66D4CCE12AD6BF4700552E0E /* FunctionsWithOverloadsExample2.swift */,
+				66D4CD192AD94B0A00552E0E /* FunctionWithDefaultArgumentsExample.swift */,
+				66D4CD072AD9173F00552E0E /* ConstructorWithDefaultArgumentsExample.swift */,
+				66CD09152A7925B800D66EFD /* FunctionWithReceiver.swift */,
+				662673AF2AB28FBF009934DD /* FunctionWithExtensionExample.swift */,
+				66D4CCDB2AD6B77B00552E0E /* FunctionWithValueClassParameterExample.swift */,
+				66D4CCDD2AD6BB2C00552E0E /* FunctionWithVarargParameterExample.swift */,
+				66D4CCE32AD6D4C100552E0E /* InlineFunctionExample.swift */,
+			);
+			path = MoreAboutFunctions;
+			sourceTree = "<group>";
+		};
+		66CD090C2A78FF8500D66EFD /* FunctionsAndProperties */ = {
+			isa = PBXGroup;
+			children = (
+				669CC6242AF1480A00DC4B6E /* UsualClassFunctionExample.swift */,
+				66D4CD232AD960B000552E0E /* UsualClassConstructorExample.swift */,
+				66D4CD272AD97BBC00552E0E /* UsualClassValPropertyExample.swift */,
+				66D4CD292AD97D1200552E0E /* UsualClassPropertyMutableExample.swift */,
+				66D4CD1F2AD95B5100552E0E /* TopLevelPropertyExample.swift */,
+				66D4CD212AD95DC900552E0E /* TopLevelPropertyMutableExample.swift */,
+				66D4CCD72AD6835D00552E0E /* FunctionWithLambdaArgsExample.swift */,
+				665A18942A9614E9000087BE /* FunctionReturnsLambda.swift */,
+			);
+			path = FunctionsAndProperties;
+			sourceTree = "<group>";
+		};
+		66D4CCF42AD7EADC00552E0E /* Generics */ = {
+			isa = PBXGroup;
+			children = (
+				66D4CCF52AD7EAF000552E0E /* BoundedGenericsExample.swift */,
+				66D4CCF72AD7EF7600552E0E /* ContravariantGenericsExample.swift */,
+				66D4CCF92AD7F24E00552E0E /* CovariantGenericsExample.swift */,
+				66D4CCFB2AD8095400552E0E /* GenericsClassesExample.swift */,
+				66D4CCFD2AD80F2B00552E0E /* GenericFunctionsExample.swift */,
+				66D4CD012AD813F700552E0E /* ReifiedFunctionsExample.swift */,
+				66D4CD032AD81B6F00552E0E /* StarProjectionExample.swift */,
+			);
+			path = Generics;
+			sourceTree = "<group>";
+		};
+		66D4CD322ADAC62800552E0E /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				66D4CD352ADAC66700552E0E /* CollectionsWithCustomTypesDataExample.swift */,
+				66D4CD372ADACB4B00552E0E /* CollectionsWithBasicTypesExample.swift */,
+				66D4CD392ADAD3B200552E0E /* MutableImmutableCollectionsExample.swift */,
+				66D4CD3B2ADB50F200552E0E /* UnitNothingExample.swift */,
+				66D4CD3D2ADB548B00552E0E /* BasicTypesExample.swift */,
+				66D4CD3F2ADB5A8200552E0E /* OptionalBasicTypesExample.swift */,
+				669CC6152AEF9B4000DC4B6E /* CollectionsWithBasicTypesExample.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		66D4CD412ADD6CC700552E0E /* Coroutines */ = {
+			isa = PBXGroup;
+			children = (
+				66D4CCE52AD6DDC400552E0E /* SuspendFunctionExample.swift */,
+				669CC61F2AEFA0CB00DC4B6E /* SuspendFunctionCompletionHandlerExample.swift */,
+				66D4CCE72AD6E26900552E0E /* SuspendFunctionKMPNativeCoroutinesExample.swift */,
+				66D4CD432ADD715400552E0E /* FlowKMPNativeCoroutinesExample.swift */,
+				66D4CD472ADD784F00552E0E /* FlowExample.swift */,
+				669CC6112AEE9CC200DC4B6E /* SuspendFunctionKMPNativeCoroutinesWithCancellationExample.swift */,
+				669CC6132AEE9E2000DC4B6E /* FlowKMPNativeCoroutinesWithCancellationExample.swift */,
+				669CC61B2AEF9F0100DC4B6E /* FlowWithCancellationException.swift */,
+				669CC61D2AEF9F5400DC4B6E /* SuspendFunctionWithCancellationExample.swift */,
+			);
+			path = Coroutines;
+			sourceTree = "<group>";
+		};
+		7555FF72242A565900829871 = {
+			isa = PBXGroup;
+			children = (
+				7555FF7D242A565900829871 /* iosApp */,
+				7555FF7C242A565900829871 /* Products */,
+				7555FFB0242A642200829871 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7555FF7C242A565900829871 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7555FF7B242A565900829871 /* iosApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7555FF7D242A565900829871 /* iosApp */ = {
+			isa = PBXGroup;
+			children = (
+				66CD08FD2A71556800D66EFD /* Overview */,
+				66CD090C2A78FF8500D66EFD /* FunctionsAndProperties */,
+				66CD090B2A78FD7800D66EFD /* MoreAboutFunctions */,
+				66D4CD322ADAC62800552E0E /* Types */,
+				66CD09062A780AF800D66EFD /* Classes */,
+				66D4CD412ADD6CC700552E0E /* Coroutines */,
+				66D4CCF42AD7EADC00552E0E /* Generics */,
+				669CC6212AF12D1E00DC4B6E /* Extensions */,
+				058557BA273AAA24004C7B11 /* Assets.xcassets */,
+				7555FF82242A565900829871 /* ContentView.swift */,
+				7555FF8C242A565B00829871 /* Info.plist */,
+				2152FB032600AC8F00CF470E /* iOSApp.swift */,
+				058557D7273AAEEB004C7B11 /* Preview Content */,
+				753549692AE116ED0016A54B /* ResultView.swift */,
+				7535496B2AE1376C0016A54B /* InteropSamples.swift */,
+			);
+			path = iosApp;
+			sourceTree = "<group>";
+		};
+		7555FFB0242A642200829871 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7555FF7A242A565900829871 /* iosApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7555FFA5242A565B00829871 /* Build configuration list for PBXNativeTarget "iosApp" */;
+			buildPhases = (
+				7555FFB5242A651A00829871 /* ShellScript */,
+				7555FF77242A565900829871 /* Sources */,
+				7555FF78242A565900829871 /* Frameworks */,
+				7555FF79242A565900829871 /* Resources */,
+				7555FFB4242A642300829871 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iosApp;
+			packageProductDependencies = (
+				66D4CCEA2AD6E40F00552E0E /* KMPNativeCoroutinesAsync */,
+				66D4CCEC2AD6E40F00552E0E /* KMPNativeCoroutinesCombine */,
+				66D4CCEE2AD6E40F00552E0E /* KMPNativeCoroutinesCore */,
+				66D4CCF02AD6E40F00552E0E /* KMPNativeCoroutinesRxSwift */,
+			);
+			productName = iosApp;
+			productReference = 7555FF7B242A565900829871 /* iosApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7555FF73242A565900829871 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = orgName;
+				TargetAttributes = {
+					7555FF7A242A565900829871 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 7555FF76242A565900829871 /* Build configuration list for PBXProject "iosApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7555FF72242A565900829871;
+			packageReferences = (
+				66D4CCE92AD6E40F00552E0E /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */,
+			);
+			productRefGroup = 7555FF7C242A565900829871 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7555FF7A242A565900829871 /* iosApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7555FF79242A565900829871 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */,
+				058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7555FFB5242A651A00829871 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"$SRCROOT/..\"\n./gradlew :shared:embedAndSignAppleFrameworkForXcode\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7555FF77242A565900829871 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66CD09082A780B0C00D66EFD /* AbstractClass.swift in Sources */,
+				669CC6252AF1480A00DC4B6E /* UsualClassFunctionExample.swift in Sources */,
+				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				66D4CD1C2AD9568500552E0E /* ObjectsExample.swift in Sources */,
+				66CD09162A7925B800D66EFD /* FunctionWithReceiver.swift in Sources */,
+				669CC6102AEA910900DC4B6E /* PublicApiExample.swift in Sources */,
+				66D4CD0C2AD91EFF00552E0E /* ExtensionFunctionOverPlatformClassExample.swift in Sources */,
+				669CC61C2AEF9F0100DC4B6E /* FlowWithCancellationException.swift in Sources */,
+				66D4CD282AD97BBD00552E0E /* UsualClassValPropertyExample.swift in Sources */,
+				66D4CD1E2AD9587900552E0E /* TopLevelFunctionExample.swift in Sources */,
+				66D4CCFC2AD8095400552E0E /* GenericsClassesExample.swift in Sources */,
+				66D4CD442ADD715400552E0E /* FlowKMPNativeCoroutinesExample.swift in Sources */,
+				66CD090E2A79052C00D66EFD /* EnumClass.swift in Sources */,
+				669CC61E2AEF9F5400DC4B6E /* SuspendFunctionWithCancellationExample.swift in Sources */,
+				66D4CCF62AD7EAF000552E0E /* BoundedGenericsExample.swift in Sources */,
+				66D4CD2D2AD9812500552E0E /* FunInterfacesExample.swift in Sources */,
+				66D4CD3E2ADB548B00552E0E /* BasicTypesExample.swift in Sources */,
+				662673B02AB28FBF009934DD /* FunctionWithExtensionExample.swift in Sources */,
+				66D4CD062AD90CF900552E0E /* CompanionObjectExample.swift in Sources */,
+				66D4CD1A2AD94B0A00552E0E /* FunctionWithDefaultArgumentsExample.swift in Sources */,
+				66D4CD312ADA8A9800552E0E /* SealedInterfacesExample.swift in Sources */,
+				66CD09122A790D9900D66EFD /* OpenClass.swift in Sources */,
+				66CD090A2A78109A00D66EFD /* DataClass.swift in Sources */,
+				66D4CD162AD9318400552E0E /* ExtensionPropertyPlatformClassExample.swift in Sources */,
+				66D4CD2F2AD9852D00552E0E /* InterfacesExample.swift in Sources */,
+				66D4CD142AD928B600552E0E /* ExtensionPropertyCompanionObjectUsualClassExample.swift in Sources */,
+				66D4CCE42AD6D4C100552E0E /* InlineFunctionExample.swift in Sources */,
+				66D4CCE02AD6BDA400552E0E /* FunctionsWithOverloadsExample.swift in Sources */,
+				66CD09142A790FF300D66EFD /* SealedClass.swift in Sources */,
+				66D4CCE82AD6E26900552E0E /* SuspendFunctionKMPNativeCoroutinesExample.swift in Sources */,
+				66D4CD122AD9251200552E0E /* ExtensionPropertyCompanionObjectPlatformClassExample.swift in Sources */,
+				66D4CD182AD947BB00552E0E /* ExtensionPropertyUsualClassExample.swift in Sources */,
+				66D4CD202AD95B5100552E0E /* TopLevelPropertyExample.swift in Sources */,
+				66D4CD222AD95DC900552E0E /* TopLevelPropertyMutableExample.swift in Sources */,
+				66D4CCE62AD6DDC400552E0E /* SuspendFunctionExample.swift in Sources */,
+				669CC6122AEE9CC200DC4B6E /* SuspendFunctionKMPNativeCoroutinesWithCancellationExample.swift in Sources */,
+				66D4CD082AD9173F00552E0E /* ConstructorWithDefaultArgumentsExample.swift in Sources */,
+				665A18952A9614E9000087BE /* FunctionReturnsLambda.swift in Sources */,
+				66D4CCD82AD6835D00552E0E /* FunctionWithLambdaArgsExample.swift in Sources */,
+				66D4CD2A2AD97D1200552E0E /* UsualClassPropertyMutableExample.swift in Sources */,
+				66D4CCDC2AD6B77B00552E0E /* FunctionWithValueClassParameterExample.swift in Sources */,
+				66D4CD242AD960B000552E0E /* UsualClassConstructorExample.swift in Sources */,
+				669CC6142AEE9E2000DC4B6E /* FlowKMPNativeCoroutinesWithCancellationExample.swift in Sources */,
+				66D4CD0E2AD9225000552E0E /* ExtensionFunctionOverUsualClassExample.swift in Sources */,
+				66D4CD3C2ADB50F200552E0E /* UnitNothingExample.swift in Sources */,
+				66D4CCE22AD6BF4700552E0E /* FunctionsWithOverloadsExample2.swift in Sources */,
+				66D4CCFA2AD7F24E00552E0E /* CovariantGenericsExample.swift in Sources */,
+				66D4CD482ADD784F00552E0E /* FlowExample.swift in Sources */,
+				66D4CD362ADAC66700552E0E /* CollectionsWithCustomTypesDataExample.swift in Sources */,
+				66D4CD022AD813F700552E0E /* ReifiedFunctionsExample.swift in Sources */,
+				7535496C2AE1376C0016A54B /* InteropSamples.swift in Sources */,
+				669CC6162AEF9B4000DC4B6E /* CollectionsWithBasicTypesExample.swift in Sources */,
+				66D4CD382ADACB4B00552E0E /* CollectionsWithBasicTypesExample.swift in Sources */,
+				66CD09102A790BEC00D66EFD /* InnerClass.swift in Sources */,
+				66D4CD4C2ADEA4C000552E0E /* ExceptionsExample.swift in Sources */,
+				66D4CCF82AD7EF7600552E0E /* ContravariantGenericsExample.swift in Sources */,
+				66D4CD3A2ADAD3B200552E0E /* MutableImmutableCollectionsExample.swift in Sources */,
+				7535496A2AE116ED0016A54B /* ResultView.swift in Sources */,
+				669CC6202AEFA0CB00DC4B6E /* SuspendFunctionCompletionHandlerExample.swift in Sources */,
+				66D4CCDE2AD6BB2C00552E0E /* FunctionWithVarargParameterExample.swift in Sources */,
+				665A18972A961812000087BE /* FunctionReturnsPrimitive.swift in Sources */,
+				66D4CD402ADB5A8200552E0E /* OptionalBasicTypesExample.swift in Sources */,
+				66D4CD042AD81B6F00552E0E /* StarProjectionExample.swift in Sources */,
+				66D4CCFE2AD80F2B00552E0E /* GenericFunctionsExample.swift in Sources */,
+				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7555FFA3242A565B00829871 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7555FFA4242A565B00829871 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7555FFA6242A565B00829871 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
+				);
+				INFOPLIST_FILE = iosApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					shared,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.iosApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7555FFA7242A565B00829871 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
+				);
+				INFOPLIST_FILE = iosApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					shared,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.iosApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7555FF76242A565900829871 /* Build configuration list for PBXProject "iosApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7555FFA3242A565B00829871 /* Debug */,
+				7555FFA4242A565B00829871 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7555FFA5242A565B00829871 /* Build configuration list for PBXNativeTarget "iosApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7555FFA6242A565B00829871 /* Debug */,
+				7555FFA7242A565B00829871 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		66D4CCE92AD6E40F00552E0E /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rickclephas/KMP-NativeCoroutines.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		66D4CCEA2AD6E40F00552E0E /* KMPNativeCoroutinesAsync */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66D4CCE92AD6E40F00552E0E /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */;
+			productName = KMPNativeCoroutinesAsync;
+		};
+		66D4CCEC2AD6E40F00552E0E /* KMPNativeCoroutinesCombine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66D4CCE92AD6E40F00552E0E /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */;
+			productName = KMPNativeCoroutinesCombine;
+		};
+		66D4CCEE2AD6E40F00552E0E /* KMPNativeCoroutinesCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66D4CCE92AD6E40F00552E0E /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */;
+			productName = KMPNativeCoroutinesCore;
+		};
+		66D4CCF02AD6E40F00552E0E /* KMPNativeCoroutinesRxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66D4CCE92AD6E40F00552E0E /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */;
+			productName = KMPNativeCoroutinesRxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7555FF73242A565900829871 /* Project object */;
+}

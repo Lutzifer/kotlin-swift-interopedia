@@ -1,0 +1,30 @@
+## Functions with vararg parameter
+
+varargs are mapped to `KotlinArray`, not Swift's variardic parameters.
+
+### Explanations
+
+Let's describe a function that uses vararg-arguments in Kotlin:
+
+```kotlin
+// FunctionWithVarargParameter.kt
+
+fun funcWithVararg(vararg item: String) {
+    println(item.joinToString { "$it | " })
+}
+```
+
+In Swift code, this turns into a function that takes `KotlinArray<NSString>`.
+
+```swift
+let arr = KotlinArray<NSString>(
+    size: 10,
+    init: { index in "\(index)" as NSString }
+)
+FunctionWithVarargParameterKt.funcWithVararg(item: arr)
+```
+
+[YouTrack has an issue about this problem](https://youtrack.jetbrains.com/issue/KT-42925), but variardic parameters in Objective-C are compile-time arguments, and Kotlin cannot simply take and convert vararg.
+
+---
+[Table of contents](/README.md)

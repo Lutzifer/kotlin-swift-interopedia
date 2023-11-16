@@ -1,412 +1,118 @@
 # Kotlin-Swift interopedia
-[![Maven Central](https://img.shields.io/maven-central/v/org.jetbrains.kotlin/kotlin-maven-plugin.svg)](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.jetbrains.kotlin%22)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Мы создали этот репозиторий, чтобы помочь разработчикам, интересующимся технологией KMM, понять, как будет выглядеть
-описанное ими публичное API общего модуля.
+## Introduction
+Kotlin/Native provides bidirectional interoperability with Objective-C. At the time of writing, Kotlin is not directly interoperable with Swift but rather indirectly via an Objective-C bridge. Swift export is something that the Kotlin/Native team intends to address in future. However, the reason for choosing to start with Objective-C is sound: older projects containing Objective-C code can also call shared Kotlin code, along with projects containing Swift code.
 
-В сети есть [подробная документация от JetBrains](https://kotlinlang.org/docs/native-objc-interop.html)   
-про интероп между Kotlin и Swift, однако в ней не рассматриваются подробно все возможности языка Kotlin.
+In general, the basics of the Kotlin language such as classes, properties, and functions can be easily used from Swift. However, some other language features may not be as readily used. This interoperability encyclopedia (or “interopedia”) aims to explain how shared Kotlin code using various language features can be called from Swift. When there is no straightforward way to do so, we discuss workarounds and library solutions, if available.
 
-Поэтому мы свели в единую табличку перечень возможностей Kotlin-а и отметили, какими возможностями можно пользоваться
-без каких-либо проблем, а с какими потребуются те или иные доработки.
+In order to provide the best possible experience for Swift developers, the rule of thumb is that using the simplest language features is best. Kotlin developers may not be expert Swift developers as well, so collaboration with their Swift teammates is required so that Kotlin developers can create shared Kotlin APIs that can be called in a beautifully idiomatic way.
 
-## Таблица интеропа
+## How to use
+### Interopedia
+This interopedia of the different Kotlin language features is categorized into broad categories, namely:
+- Overview
+- Functions and properties
+- More about functions
+- Types
+- Classes and interfaces
+- Coroutines
+- Extensions
+- Generics
 
-Как пользоваться таблицей:
+Each language feature has its own article, consisting of an explanation of the feature, some sample code in Kotlin, how to call this code from Swift (if possible), and additional improvements should the Swift code not be as idiomatic as we’d like. 
 
-- Знак :white_check_mark: означает, что указанной фичой Kotlin-а можно спокойно пользоваться, она генерирует
-  Swift-friendly код без необходимости доработок;
-- Знак :warning: означает, что либо для работы фичи требуются какие-то доработки, либо есть несоответствие между
-  ожидаемым и реальным поведением фичи, которое не сильно мешает разработке;
-- Знак :no_entry_sign: означает, что фичой нельзя пользоваться, она генерирует не Swift-friendly код, она работает
-  совсем не так как ожидается, и это может стать помехой в разработке.
+You could search the interopedia for the particular language feature that you are interested in, or read all the articles in order for a more comprehensive understanding of Kotlin/Swift interoperability.
 
-<br/>
+### Kotlin/Swift Interop Playground app
+The iOS app is organized into the same broad categories as the interopedia. Clicking on a specific language feature will:
+- Display a summary of the interoperability of the feature.
+- Run code samples associated with the feature and print the results in the console.
 
+You can edit the code, rerun the app, and see how the output has changed.
+
+## Overview
 <table>
-	<thead>
-		<th>Фича Kotlin-а</th>
-		<th>Ожидание</th>
-		<th>Статус</th>
-		<th>Комментарий</th>
-	</thead>
-	<tbody>
-		<tr>
-			<td colspan="4" align="center">Common</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/common/Internal%20modifier.md">Internal modifier</a></td>
-			<td>Internal-функции и классы не видны в Swift</td>
-			<td>:white_check_mark:</td>
-			<td>Так и есть, с iOS-разработчиками придётся обсуждать только публичное API общего кода</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/common/JavaDoc%20comments.md">JavaDoc comments</a></td>
-			<td>Комментарии видны в XCode</td>
-			<td>:warning:</td>
-			<td>Комментарии видны, если добавить специальный аргумент для компилятора</td>
-		</tr>
-		<tr>
-			<td colspan="4" align="center">Data types</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/types/Primitive%20types.md">Primitive types</a></td>
-			<td>Типы, объявленные в Kotlin, можно без изменений использовать в Swift</td>
-			<td>:warning:</td>
-			<td>Может требоваться маппинг для целочисленных типов данных / маппинги для Char-а</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/types/Optional%20(nullable)%20primitive%20types.md">Optional (nullable) primitive types</a></td>
-			<td>Тип, объявленный как Nullable, является таковым и на стороне Swift / Пользоваться nullable-типами можно без изменений</td>
-			<td>:warning:</td>
-			<td>Для примитивных типов требуется маппинг в специальные optional-типы / особенности с Char?</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/types/Mutable,%20immutable%20collections.md">Mutable, immutable collections</a></td>
-			<td>Сигнатуры List / MutableList / etc имеют значение в Swift-мире и тоже регулируют мутабельность ; Использование коллекций не отличается от Kotlin</td>
-			<td>:warning:</td>
-			<td>Для регулировки мутабельности используются ключевые слова let, var / Для мутабельных коллекций требуются дополнительные маппинги</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/types/Collections%20with%20primitive%20types.md">Collections with primitive types</a></td>
-			<td>Коллекции с элементами примитивных типов не требуют дополнительных маппингов</td>
-			<td>:warning:</td>
-			<td>Маппинги не требуются только для String-типа</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/types/Collections%20with%20custom%20types%20data.md">Collections with custom types data</a></td>
-			<td>Коллекции с элементами кастомных типов не требуют дополнительных маппингов</td>
-			<td>:white_check_mark:</td>
-			<td>Маппинги не требуются :thumbsup:</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/types/Unit%20and%20Nothing.md">Unit and Nothing</a></td>
-			<td>Типы Unit и Nothing можно использовать так же, как в Kotlin: Unit как объект или void, Nothing - нельзя создать</td>
-			<td>:white_check_mark:</td>
-			<td>Реальность соответствует ожиданиям :thumbsup:</td>
-		</tr>
-		<tr>
-			<td colspan="4" align="center">Usual workflow</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/usual-workflow/Top-level%20functions.md">Top-level functions</a></td>
-			<td>Функцию можно использовать напрямую после импорта, аналогично Kotlin-у</td>
-			<td>:warning:</td>
-			<td>Появляется класс-обёртка: UtilityKt.topLevelFunction()</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/usual-workflow/Top-level%20val%20properties%20(readonly).md">Top-level val properties (readonly)</a></td>
-			<td>Доступ к свойству можно получить напрямую после импорта, аналогично Kotlin-у / поле readonly</td>
-			<td>:warning:</td>
-			<td>Появляется класс-обёртка для доступа к свойству: UtilityKt.propertyVal</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/usual-workflow/Top-level%20var%20properties%20(mutable).md">Top-level var properties (mutable)</a></td>
-			<td>Доступ к свойству можно получить напрямую после импорта, аналогично Kotlin-у / поле mutable</td>
-			<td>:warning:</td>
-			<td>Появляется класс-обёртка для доступа к свойству: UtilityKt.propertyVar</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/usual-workflow/Extension%20function%20over%20platform%20class.md">Extension function over platform class</a></td>
-			<td>Функцию можно использовать на объекте платформенного класса</td>
-			<td>:warning:</td>
-			<td>Появляется класс-обёртка с методом, принимающим объект нужного класса</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/usual-workflow/Extension%20properties%20over%20platform%20class.md">Extension properties over platform class</a></td>
-			<td>Доступ к свойству можно получить с помощью объекта платформенного класса</td>
-			<td>:warning:</td>
-			<td>Появляется класс-обёртка с методом, принимающим объект нужного класса</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/usual-workflow/Extension%20properties%20for%20companion%20object%20of%20platform%20class.md">Extension properties for companion object of platform class</a></td>
-			<td>Доступ к свойству можно получить с помощью платформенного класса</td>
-			<td>:no_entry_sign:</td>
-			<td>В .h-файле свойство есть, а в Swift-е не получается использовать</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/usual-workflow/Extension%20functions%20over%20usual%20class.md">Extension functions over usual class</a></td>
-			<td>Функцию можно использовать на объекте класса</td>
-			<td>:white_check_mark:</td>
-			<td>Реальность соответствует ожиданиям :thumbsup:</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/usual-workflow/Extension%20properties%20over%20usual%20class.md">Extension properties over usual class</a></td>
-			<td>Доступ к свойству можно получить через объект класса</td>
-			<td>:white_check_mark:</td>
-			<td>Реальность соответствует ожиданиям :thumbsup:</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/usual-workflow/Extension%20properties%20for%20companion%20object%20of%20usual%20class.md">Extension properties for companion object of usual class</a></td>
-			<td>Доступ к свойству можно получить через класс</td>
-			<td>:warning:</td>
-			<td>Доступ к свойству можно получить через объект companion</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/usual-workflow/Usual%20class%20constructor.md">Usual class constructor</a></td>
-			<td>Работа с конструктором не отличается от Kotlin-а</td>
-			<td>:white_check_mark:</td>
-			<td>Реальность соответствует ожиданиям :thumbsup:</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/usual-workflow/Usual%20class%20val%20property%20(readonly).md">Usual class val property (readonly)</a></td>
-			<td>Доступ к свойству есть из объекта класса / свойство readonly</td>
-			<td>:white_check_mark:</td>
-			<td>Реальность соответствует ожиданиям :thumbsup:</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/usual-workflow/Usual%20class%20var property%20(mutable).md">Usual class var property (mutable)</a></td>
-			<td>Доступ к свойству есть из объекта класса / свойство mutable</td>
-			<td>:white_check_mark:</td>
-			<td>Реальность соответствует ожиданиям :thumbsup:</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/usual-workflow/Usual%20class%20functions.md">Usual class functions</a></td>
-			<td>Работа с функциями, объявленными внутри класса, не отличается от Kotlin-а</td>
-			<td>:white_check_mark:</td>
-			<td>Реальность соответствует ожиданиям :thumbsup:</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/usual-workflow/Companion%20object.md">Companion object</a></td>
-			<td>Доступ к свойствам и функциям, объявленным в companion object-е, аналогичен Kotlin-у</td>
-			<td>:warning:</td>
-			<td>Доступ есть через вспомогательный объект companion</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/usual-workflow/Objects.md">Objects</a></td>
-			<td>Доступ к свойствам и функциям, объявленным в object-е, аналогичен Kotlin-у</td>
-			<td>:warning:</td>
-			<td>Доступ есть через вспомогательный объект shared</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/usual-workflow/Function%20with%20default%20arguments.md">Function with default arguments</a></td>
-			<td>Работа с функциями, имеющими дефолтные аргументы, аналогична Kotlin-у</td>
-			<td>:no_entry_sign:</td>
-			<td>Всегда приходится указывать все аргументы функции</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/usual-workflow/Constructor%20with%20default%20arguments.md">Constructor with default arguments</a></td>
-			<td>Работа с конструктором, имеющим дефолтные аргументы, аналогична Kotlin-у</td>
-			<td>:no_entry_sign:</td>
-			<td>Всегда приходится указывать все аргументы для конструктора</td>
-		</tr>
-		<tr>
-			<td colspan="4" align="center">Classes</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/classes/Abstract%20class.md">Abstract class</a></td>
-			<td>Можно отнаследоваться от абстрактного класса, IDE подсказывает какие методы надо переопределить</td>
-			<td>:warning:</td>
-			<td>В IDE нет подсказок о необходимости переопределить абстрактный метод</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/classes/Annotation%20class.md">Annotation class</a></td>
-			<td>Аннотации можно использовать в Swift</td>
-			<td>:no_entry_sign:</td>
-			<td>Аннотации не попали в .h-файл</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/classes/Data%20class.md">Data class</a></td>
-			<td>Data class-ы сохраняют свои свойства после перехода в Swift</td>
-			<td>:warning:</td>
-			<td>Не все возможности data class-ов сохраняются / есть особенности с copy</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/classes/Enum%20class.md">Enum class</a></td>
-			<td>Kotlin-овский enum class превратится в enum Swift-а, и можно будет использовать switch</td>
-			<td>:warning:</td>
-			<td>Не работает как ожидается. Но сгенерировался объект со статическими элементами</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/classes/Inner%20class.md">Inner class</a></td>
-			<td>Можно создать инстанс inner-класса / прямого доступа к родительским свойствам и функциям нет</td>
-			<td>:warning:</td>
-			<td>Небольшие отличия в синтаксисе создания</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/classes/Open%20class.md">Open class</a></td>
-			<td>Можно наследоваться от open-класса / есть доступ к protected-полям / можно переопределять open-методы</td>
-			<td>:white_check_mark:</td>
-			<td>Можно переопределять и final-методы</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/classes/Sealed%20class.md">Sealed class</a></td>
-			<td> Корректно конвертируется в структуру, которую можно передать в switch-конструкцию и сделать exhaustive</td>
-			<td>:no_entry_sign:</td>
-			<td>Генерируется класс с наследниками. Передав в switch нет подсказок об exhaustive</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/classes/Value%20class.md">Value class</a></td>
-			<td>Класс попадёт в .h-файл, им можно будет пользоваться в Swift</td>
-			<td>:no_entry_sign:</td>
-			<td>Класс не попал в .h-файл, пользоваться нельзя</td>
-		</tr>
-		<tr>
-			<td colspan="4" align="center">Interfaces</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/interfaces/Interface.md">Interface</a></td>
-			<td>При реализации интерфейса, IDE подставит заглушки для всего</td>
-			<td>:white_check_mark:</td>
-			<td>Интерфейс стал @protocol-ом. Но почему-то val-свойство превратилось в var</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/interfaces/Sealed%20interface.md">Sealed interface</a></td>
-			<td>При использовании в switch IDE поможет рассмотреть все варианты</td>
-			<td>:no_entry_sign:</td>
-			<td>Сгенерировались отдельные протоколы, не связанные между собой</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/interfaces/Fun%20interface.md">Fun interface</a></td>
-			<td>С помощью такого протокола можно более простым синтаксисом описать лямбду</td>
-			<td>:no_entry_sign:</td>
-			<td>В Swift нельзя создать анонимный класс</td>
-		</tr>
-		<tr>
-			<td colspan="4" align="center">Functions</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/functions/DSL.md">DSL</a></td>
-			<td>Надеемся, что DSL в Kotlin-е превратится в DSL на Swift</td>
-			<td>:warning:</td>
-			<td>Сгенерировались функции с receiver-ами, выглядит не так удобно, как хотелось бы</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/functions/Function%20returns%20lambda.md">Function returns lambda</a></td>
-			<td>Функция, вернувшая лямбду, работает без крашей; лямбду можно вызвать</td>
-			<td>:white_check_mark:</td>
-			<td>Реальность совпадает с ожиданием</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/functions/Function%20returns%20primitive%20type.md">Function returns primitive type</a></td>
-			<td>Функция, возвращающая примитивный тип, работает без ошибок</td>
-			<td>:white_check_mark:</td>
-			<td>Реальность совпадает с ожиданием</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/functions/Function%20with%20extension%20function%20as%20args.md">Function with extension function as args</a></td>
-			<td>Можно вызвать функцию так же, как в Kotlin</td>
-			<td>:warning:</td>
-			<td>Extension-функция превращается в лямбду с параметром</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/functions/Function%20with%20lambda%20arguments.md">Function with lambda arguments</a></td>
-			<td>Функция, принимающая в аргументах одну или несколько лямбд, нормально конвертируется в Swift</td>
-			<td>:white_check_mark:</td>
-			<td>Реальность совпадает с ожиданием</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/functions/Function%20with%20no%20return%20type.md">Function with no return type</a></td>
-			<td>Функции, которые ничего не возвращают, можно спокойно вызвать</td>
-			<td>:white_check_mark:</td>
-			<td>Реальность совпадает с ожиданием</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/functions/Function%20with%20value%20class%20parameter.md">Function with value class parameter</a></td>
-			<td>Функция появится в .h-файле и её можно будет использовать, передавая value-класс</td>
-			<td>:no_entry_sign:</td>
-			<td>Функция появилась в .h-файле, но аргумент value-класса развернулся в примитивы</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/functions/Function%20with%20vararg%20parameter.md">Function with vararg parameter</a></td>
-			<td>vararg смапился в Swift-овый variardic и используется аналогично</td>
-			<td>:no_entry_sign:</td>
-			<td>Не работает так, как ожидается</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/functions/Functions%20with%20overloads.md">Functions with overloads</a></td>
-			<td>Использование перегруженных функций ничем не отличается от Kotlin-а</td>
-			<td>:warning:</td>
-			<td>Есть особенности при использовании одинаковых имён параметров</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/functions/Inline%20functions.md">Inline functions</a></td>
-			<td>Инлайн-функции есть в .h-файле, их можно вызвать</td>
-			<td>:white_check_mark:</td>
-			<td>Реальность совпадает с ожиданием</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/functions/Suspend%20functions.md">Suspend functions</a></td>
-			<td>Suspend-функции развернулись в удобную для Swift-конструкцию</td>
-			<td>:warning:</td>
-			<td>Транслируется в callback, экспериментально - в async / await. Но для использования в реактивных фреймворках требуются дополнительный bridge-код</td>
-		</tr>
-		<tr>
-			<td colspan="4" align="center">Generics</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/generics/Generic%20classes.md">Generic classes</a></td>
-			<td>Сгенерируется класс с generic-ом, пользоваться можно как в Kotlin</td>
-			<td>:warning:</td>
-			<td>Есть некоторые особенности использования типов</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/generics/Generic%20functions.md">Generic functions</a></td>
-			<td>Обычная функция-generic позволяет принять аргумент любого типа</td>
-			<td>:no_entry_sign:</td>
-			<td>Нет автоматического вывода типа, особенности nullability</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/generics/Generic%20interfaces.md">Generic interfaces</a></td>
-			<td>Можно реализовать протокол с generic-ом после перехода в Swift</td>
-			<td>:no_entry_sign:</td>
-			<td>Generic-и на интерфейсах не поддерживаются</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/generics/Bounded%20generics.md">Bounded generics</a></td>
-			<td>Ограничение типа generic-а, объявленное в Kotlin, сработает и в Swift</td>
-			<td>:no_entry_sign:</td>
-			<td>Ограничение не сработало</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/generics/Contravariant%20generics.md">Contravariant generics</a></td>
-			<td>При указании ключевого слова in на generic-е, сгенерируется generic со схожим поведением (контравариантный generic)</td>
-			<td>:no_entry_sign:</td>
-			<td>Не работает как ожидается, приходится использовать приведение типов</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/generics/Covariant%20generics.md">Covariant generics</a></td>
-			<td>При указании ключевого слова out на generic-е, сгенерируется generic со схожим поведением (ковариантный generic)</td>
-			<td>:no_entry_sign:</td>
-			<td>Не работает как ожидается, приходится использовать приведение типов</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/generics/Star%20projection.md">Star projection</a></td>
-			<td>Сгенерируется generic со схожим поведением (in Nothing / out Any?)</td>
-			<td>:no_entry_sign:</td>
-			<td>Не работает как ожидается, приходится использовать приведение типов</td>
-		</tr>
-		<tr>
-			<td><a href="/docs/generics/Reified%20functions.md">Reified functions</a></td>
-			<td>Функции с reified нормально вызываются из Swift + работают ожидаемым образом</td>
-			<td>:no_entry_sign:</td>
-			<td>В рантайме функция крашится</td>
-		</tr>
-	</tbody>
+  <tr><td><a href="/docs/overview/Top-level%20functions.md">Top-level functions</a></td><td>You can access a top-level function via the wrapper class: TopLevelFunctionKt.topLevelFunction().</td></tr>
+  <tr><td><a href="/docs/overview/Exceptions.md">Exceptions</a></td><td>If you invoke a Kotlin function that throws an exception and doesn't declare it with `@Throws`, that crashes the app. Declared exceptions are converted to NSError and must be handled.</td></tr>
+  <tr><td><a href="/docs/overview/PublicAPI.md">Public API</a></td><td>Public classes, functions, and properties are visible from Swift. Marking classes, functions, and properties internal will exclude them from the public API of the shared code, and they will not be visible in Swift.</td></tr>
+  <tr><td><a href="/docs/overview/KDocComments.md">KDoc comments</a></td><td>You can see certain KDoc comments at development time. In Xcode, use Option+Double left click to see the docs. Note that many KDocs features don't work in Xcode, like properties on constructors (@property) aren't visible. In Fleet, use the 'Show Documentation' action.</td></tr>
 </table>
 
-## Полезные ссылки
-- Из документации Kotlin
-    - [Документация: Что нового в Kotlin 1.5.30](https://kotlinlang.org/docs/whatsnew1530.html)
-    - [Документация: интероп Swift <--> Kotlin](https://kotlinlang.org/docs/native-objc-interop.html).
-    - [Документация: маппинг типов между C и Kotlin/Native](https://kotlinlang.org/docs/mapping-primitive-data-types-from-c.html)
-    - [Документация: Туториал по использованию Ktor-а в multiplatorm](https://kotlinlang.org/docs/mobile/use-ktor-for-networking.html#set-up-an-http-client)
-    - [Документация: Kotlin-идиомы](https://kotlinlang.org/docs/idioms.html)
-    - [Документация: Concurrency в Kotlin/Native](https://kotlinlang.org/docs/mobile/concurrency-overview.html)
-- [Документация Apple: Про completion handler-ы](https://developer.apple.com/documentation/swift/calling_objective-c_apis_asynchronously)
-- [Документация Swift: про async / await](https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html)
-- [Доклад: Состояние интеропа в 2019 году (Некоторые вещи всё ещё актуальны)](https://www.youtube.com/watch?v=N1Xt-LuAR9A&ab_channel=JetBrainsTV)
-- [Статья: Про Kotlin/Native generics в 2019 году (Всё ещё актуально)](https://medium.com/@kpgalligan/kotlin-native-interop-generics-15eda6f6050f)
-- [Статья: Про построение более удобного кода на Swift при помощи gradle-плагина moko-kswift](https://habr.com/ru/post/571714/)
-- [Статья: Построение DSL в Swift](https://habr.com/ru/company/tinkoff/blog/455760/).
-- Серия статей про написание необходимых обёрток для взаимодействия между корутинами и RxSwift / Combine / OpenCombine
-    - [Статья: Использование suspend в Swift - про неудобство с RxSwift](https://dev.to/touchlab/working-with-kotlin-coroutines-and-rxswift-24fa)
-    - [Статья: Использование suspend в Swift в 2021 году](https://touchlab.co/kotlin-coroutines-swift-revisited/)
-    - [Github: Пример работы корутин с RxSwift / Combine на основе статей от Touchlab](https://github.com/touchlab/SwiftCoroutines)
-- Набор статей про Generic-и в Kotlin:
-    - [Хорошая статья про ковариантность и контравариантность в Kotlin](https://typealias.com/guides/illustrated-guide-covariance-contravariance/)
-    - [Хорошая статья про in и out в Kotlin](https://typealias.com/guides/ins-and-outs-of-generic-variance/)
-    - [Хорошая статья про star projection](https://typealias.com/guides/star-projections-and-how-they-work/)
-- [Github: Список DSL-библиотек на Swift](https://github.com/carson-katri/awesome-result-builders)
-- [Плагин moko-kswift](https://github.com/icerockdev/moko-kswift/)
+## Functions and properties
+<table>
+  <tr><td><a href="/docs/functionsandproperties/Member%20functions.md">Member functions</a></td><td>You can call public member functions from Swift. Internal or private declarations aren't visible.</td></tr>
+  <tr><td><a href="/docs/functionsandproperties/Constructors.md">Constructor</a></td><td>You call constructors to create Kotlin classes from Swift.</td></tr>
+  <tr><td><a href="/docs/functionsandproperties/Read-only%20member%20properties.md">Read-only member properties</a></td><td>Member val property is accessible from Swift and is a read-only property in Swift.</td></tr>
+  <tr><td><a href="/docs/functionsandproperties/Mutable%20member%20properties.md">Mutable member properties</a></td><td>Member var property is accessible from Swift and is a mutable property in Swift.</td></tr>
+  <tr><td><a href="/docs/functionsandproperties/Top-level%20val%20properties.md">Top-level val properties (readonly)</a></td><td>You access a top-level property via the wrapper class: TopLevelPropertyKt.topLevelProperty.</td></tr>
+  <tr><td><a href="/docs/functionsandproperties/Top-level%20mutable%20var%20properties.md">Top-level var properties (mutable)</a></td><td>You access a top-level property via the wrapper class: TopLevelMutablePropertyKt.topLevelProperty.</td></tr>
+  <tr><td><a href="/docs/functionsandproperties/Functions%20expecting%20lambda%20arguments.md">Functions expecting lambda arguments</a></td><td>You can use a function expecting one or more lambdas as arguments without issues from Swift.</td></tr>
+  <tr><td><a href="/docs/functionsandproperties/Functions%20returning%20function%20type.md">Functions returning function type</a></td><td>You can call a Kotlin function returning a lambda. The result has Swift function type, like () -> String, so you can easily call it.</td></tr>
+</table>
+
+## More about functions
+<table>
+  <tr><td><a href="/docs/moreaboutfunctions/Functions%20with%20overloads.md">Functions with overloads</a></td><td>There are some peculiarities when using the same parameter names.</td></tr>
+  <tr><td><a href="/docs/moreaboutfunctions/Functions%20with%20default%20arguments.md">Functions with default arguments</a></td><td>You always have to specify all the function arguments. Improved interop available with SKIE.</td>
+  <tr><td><a href="/docs/moreaboutfunctions/Constructors%20with%20default%20arguments.md">Constructor with default arguments</a></td><td>You always have to specify all the arguments for a constructor.</td></tr>
+  <tr><td><a href="/docs/moreaboutfunctions/Functions%20expecting%20lambda%20with%20receiver.md">Functions expecting lambda with receiver</a></td><td>The extension function turns into a lambda with a parameter.</td></tr>
+  <tr><td><a href="/docs/moreaboutfunctions/Functions%20with%20receivers.md">Functions with receivers</a></td><td>Functions with receivers turn into functions with parameters, which is not as convenient.</td></tr>
+  <tr><td><a href="/docs/moreaboutfunctions/Functions%20with%20value%20class%20parameter.md">Functions with value class parameter</a></td><td>The function appears in the .h file, but the inline class argument is turned into a basic type.</td></tr>
+  <tr><td><a href="/docs/moreaboutfunctions/Functions%20with%20vararg%20parameter.md">Functions with vararg parameter</a></td><td>varargs are mapped to KotlinArray, not Swift's variardic parameters.</td></tr>
+  <tr><td><a href="/docs/moreaboutfunctions/Inline%20functions.md">Inline functions</a></td><td>Inline functions are in the .h file, they can be called. However, they are regular functions and not inlined.</td></tr>
+</table>
+
+## Types
+<table>
+  <tr><td><a href="/docs/types/Basic%20types.md">Basic types</a></td><td>May require mapping for integer data types and mapping for Char.</td></tr>
+  <tr><td><a href="/docs/types/Optional%20basic%20types.md">Optional basic types</a></td><td>Some basic types require mapping into special optional types.</td></tr>
+  <tr><td><a href="/docs/types/Collections%20with%20custom%20types.md">Collections with custom types</a></td><td>Collections with elements of custom types do not require additional mappings.</td></tr>
+  <tr><td><a href="/docs/types/Collections%20with%20basic%20types.md">Collections with basic types</a></td><td>Collections with elements of basic types (except String) require a wrapper.</td></tr>
+  <tr><td><a href="/docs/types/Mutable,%20immutable%20collections.md">Mutable, immutable collections</a></td><td>To adjust mutability, the let and var keywords are used. Additional mappings are required for mutable collections.</td></tr>
+  <tr><td><a href="/docs/types/Unit%20and%20Nothing.md">Unit and Nothing</a></td><td>The Unit and Nothing types can be used in the same way as in Kotlin: Unit as an object or void, Nothing cannot be created.</td></tr>
+</table>
+
+## Classes and interfaces
+<table>
+  <tr><td><a href="/docs/classesandinterfaces/Abstract%20classes.md">Abstract classes</a></td><td>Xcode has no hints to override abstract methods, rather we get a crash when trying to use the method during runtime.</td></tr>
+  <tr><td><a href="/docs/classesandinterfaces/Annotation%20classes.md">Annotation classes</a></td><td>Annotations are not supported and are not included in the .h file.</td></tr>
+  <tr><td><a href="/docs/classesandinterfaces/Data%20classes.md">Data classes</a></td><td>Some autogenerated functions are converted to Swift: copy to doCopy, equals to isEquals, toString to description. Additional features, like destructuring, are not supported.</td></tr>
+  <tr><td><a href="/docs/classesandinterfaces/Enum%20classes.md">Enum classes</a></td><td>No equivalent enum is generated on the Swift side, and default case must be specified in a switch expression. Instead an object with static elements is generated. Improved interop available with SKIE.</td></tr>
+  <tr><td><a href="/docs/classesandinterfaces/Inner%20classes.md">Inner classes</a></td><td>Minor differences in creation syntax.</td></tr>
+  <tr><td><a href="/docs/classesandinterfaces/Open%20classes.md">Open classes</a></td><td>Can inherit from open class, use its protected properties, override open, but not override final methods.</td></tr>
+  <tr><td><a href="/docs/classesandinterfaces/Sealed%20classes.md">Sealed classes</a></td><td>A class with heirs is generated. Passing to a switch statement requires a default case. Improved interop available with SKIE.</td></tr>
+  <tr><td><a href="/docs/classesandinterfaces/Inline%20classes.md">Inline classes</a></td><td>This feature is not supported.</td></tr>
+  <tr><td><a href="/docs/classesandinterfaces/Objects.md">Objects</a></td><td>You can access Kotlin object via the shared auxiliary object: MyKotlinObject.shared.myProperty.</td>
+  <tr><td><a href="/docs/classesandinterfaces/Companion%20objects.md">Companion objects</a></td><td>You can access members of Kotlin companion objects from Swift explicitly through the `companion` auxiliary object: ClassWithCompanionObject.companion.CONST_VAL_EXAMPLE.</td></tr>
+  <tr><td><a href="/docs/classesandinterfaces/Fun%20interfaces.md">Fun interfaces</a></td><td>You can't create an anonymous class in Swift.</td></tr>
+  <tr><td><a href="/docs/classesandinterfaces/Interfaces.md">Interfaces</a></td><td>The interface has become @protocol. Xcode turns val property into var when generating the stubs.</td></tr>
+  <tr><td><a href="/docs/classesandinterfaces/Sealed%20interfaces.md">Sealed interfaces</a></td><td>Separate protocols are generated that are not related to each other.</td></tr>
+</table>
+
+## Coroutines
+<table>
+  <tr><td><a href="/docs/coroutines/Suspend%20functions.md">Suspend functions</a></td><td>Translated into callback, experimentally - into async / await. Libraries like SKIE and KMP-NativeCoroutines can be used to improve the interop and provide cancellation support.</td></tr>
+  <tr><td><a href="/docs/coroutines/Flows.md">Flows</a></td><td>Translated into callback, experimentally - into async / await. Generic type arguments are lost. Libraries like SKIE and KMP-NativeCoroutines can be used to improve the interop and provide cancellation support.</td></tr>
+</table>
+
+## Extensions
+<table>
+  <tr><td><a href="/docs/extensions/Extension%20functions%20over%20platform%20class.md">Extension function over platform class</a></td><td>A wrapper class appears with a function that accepts an object of the desired class.</td></tr>
+  <tr><td><a href="/docs/extensions/Extension%20functions%20over%20usual%20class.md">Extension function over usual class</a></td><td>The function can be used on a class object.</td></tr>
+  <tr><td><a href="/docs/extensions/Extension%20properties%20over%20platform%20class.md">Extension properties over platform class</a></td><td>A wrapper class appears with a function that accepts an object of the desired class.</td>
+  <tr><td><a href="/docs/extensions/Extension%20properties%20over%20usual%20class.md">Extension properties over usual class</a></td><td>The property can be accessed through the class object.</td>
+  <tr><td><a href="/docs/extensions/Extension%20properties%20for%20companion%20object%20of%20platform%20class.md">Extension properties for companion object of platform class</a></td><td>There is a property in the .h file, but in Swift it’s impossible to use.</td></tr>
+  <tr><td><a href="/docs/extensions/Extension%20properties%20for%20companion%20object%20of%20usual%20class.md">Extension properties for companion object of usual class</a></td><td>The property can be accessed through the companion object.</td>
+</table>
+
+## Generics
+<table>
+  <tr><td><a href="/docs/generics/Generic%20classes.md">Generic classes</a></td><td>Some features are supported.</td></tr>
+  <tr><td><a href="/docs/generics/Generic%20functions.md">Generic functions</a></td><td>Automatic type inference and nullability are not supported.</td></tr>
+  <tr><td><a href="/docs/generics/Bounded%20generics.md">Bounded generics</a></td><td>The generic type restriction is not supported.</td></tr>
+  <tr><td><a href="/docs/generics/Contravariant%20generics.md">Contravariant generics</a></td><td>Requires a type cast.</td></tr>
+  <tr><td><a href="/docs/generics/Covariant%20generics.md">Covariant generics</a></td><td>Requires a type cast.</td></tr>
+  <tr><td><a href="/docs/generics/Reified%20functions.md">Reified functions</a></td><td>The reified function crashes at runtime.</td></tr>
+  <tr><td><a href="/docs/generics/Star%20projection.md">Star projection</a></td><td>Requires a type cast.</td></tr>
+  <tr><td><a href="/docs/generics/Generic%20interfaces.md">Generic interfaces</a></td><td>Generic interfaces are not supported.</td></tr>  
+</table>
