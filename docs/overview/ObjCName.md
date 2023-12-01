@@ -23,7 +23,7 @@ Here we are renaming a class, function, and its parameter using the `@ObjCName` 
 
 #### Setup
 
-Since these annotations are experimental, it is necessary to opt into them in.
+Since the annotation is experimental, it is necessary to opt-in.
 ```kotlin
 sourceSets {
     all {
