@@ -1,6 +1,6 @@
 ## Interop annotation - @HiddenFromObjC
 
-Hides a Kotlin declaration from Objective-C/Swift. Experimental.
+[@HiddenFromObjC](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.native/-hidden-from-obj-c/) hides a Kotlin declaration from Objective-C/Swift. Experimental.
 
 ### Explanations
 

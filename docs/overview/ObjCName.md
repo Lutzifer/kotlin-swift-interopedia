@@ -1,6 +1,6 @@
 ## Interop annotations - @ObjCName
 
-Gives better Objective-C/Swift names to Kotlin constructs like classes, functions and so on, without actually renaming the Kotlin constructs. Experimental.
+[@ObjCName](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.native/-obj-c-name/) gives better Objective-C/Swift names to Kotlin constructs like classes, functions and so on, without actually renaming the Kotlin constructs. Experimental.
 
 ### Explanations
 

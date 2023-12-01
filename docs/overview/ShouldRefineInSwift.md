@@ -1,6 +1,6 @@
 ## Interop annotations - @ShouldRefineInSwift
 
-Helps to replace a Kotlin declaration with a wrapper written in Swift. Experimental.
+[@ShouldRefineInSwift](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.native/-should-refine-in-swift/) helps to replace a Kotlin declaration with a wrapper written in Swift. Experimental.
 
 ### Explanations
 
