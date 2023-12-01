@@ -37,9 +37,9 @@ You can edit the code, rerun the app, and see how the output has changed.
   <tr><td><a href="/docs/overview/Top-level%20functions.md">Top-level functions</a></td><td>You can access a top-level function via the wrapper class: TopLevelFunctionKt.topLevelFunction().</td></tr>
   <tr><td><a href="/docs/overview/Exceptions.md">Exceptions</a></td><td>If you invoke a Kotlin function that throws an exception and doesn't declare it with `@Throws`, that crashes the app. Declared exceptions are converted to NSError and must be handled.</td></tr>
   <tr><td><a href="/docs/overview/PublicAPI.md">Public API</a></td><td>Public classes, functions, and properties are visible from Swift. Marking classes, functions, and properties internal will exclude them from the public API of the shared code, and they will not be visible in Swift.</td></tr>
-  <tr><td><a hred="/docs/overview/ObjCName.md">Interop annotation - @ObjCName</a><td><td>Gives better Objective-C/Swift names to Kotlin constructs like classes, functions and so on, without actually renaming the Kotlin constructs. Experimental.</td></tr>
-  <tr><td><a hred="/docs/overview/HiddenFromObj.md">Interop annotations - @HiddenFromObj</a><td><td>Hides a Kotlin declaration from Objective-C/Swift. Experimental.</td></tr>
-  <tr><td><a hred="/docs/overview/ShouldRefineInSwift.md">Interop annotations - @ShouldRefineInSwift</a><td><td>Helps to replace a Kotlin declaration with a wrapper written in Swift. Experimental.</td></tr>
+  <tr><td><a href="/docs/overview/ObjCName.md">Interop annotation - @ObjCName</a></td><td>Gives better Objective-C/Swift names to Kotlin constructs like classes, functions and so on, without actually renaming the Kotlin constructs. Experimental.</td></tr>
+  <tr><td><a href="/docs/overview/HiddenFromObj.md">Interop annotations - @HiddenFromObj</a></td><td>Hides a Kotlin declaration from Objective-C/Swift. Experimental.</td></tr>
+  <tr><td><a href="/docs/overview/ShouldRefineInSwift.md">Interop annotations - @ShouldRefineInSwift</a></td><td>Helps to replace a Kotlin declaration with a wrapper written in Swift. Experimental.</td></tr>
   <tr><td><a href="/docs/overview/KDocComments.md">KDoc comments</a></td><td>You can see certain KDoc comments at development time. In Xcode, use Option+Double left click to see the docs. Note that many KDocs features don't work in Xcode, like properties on constructors (@property) aren't visible. In Fleet, use the 'Show Documentation' action.</td></tr>
 </table>
 
