@@ -36,7 +36,7 @@ Using the `@ShouldRefineInSwift` annotation, we are indicating that we intend to
 
 #### Setup
 
-Since these annotations are experimental, it is necessary to opt into them in.
+Since the annotation is experimental, it is necessary to opt-in.
 ```kotlin
 sourceSets {
     all {
