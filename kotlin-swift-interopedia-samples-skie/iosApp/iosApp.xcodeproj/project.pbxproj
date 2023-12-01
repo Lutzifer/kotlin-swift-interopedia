@@ -11,13 +11,13 @@
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		66CD08F82A6A5C0E00D66EFD /* FunctionWithDefaultArgumentsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD08F72A6A5C0E00D66EFD /* FunctionWithDefaultArgumentsExample.swift */; };
-		66CD08FF2A71559000D66EFD /* JavaDocComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD08FE2A71559000D66EFD /* JavaDocComments.swift */; };
-		66CD090A2A78109A00D66EFD /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD09092A78109A00D66EFD /* DataClass.swift */; };
 		66CD090E2A79052C00D66EFD /* EnumClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD090D2A79052C00D66EFD /* EnumClass.swift */; };
 		66CD09142A790FF300D66EFD /* SealedClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD09132A790FF300D66EFD /* SealedClass.swift */; };
 		66D4CCF32AD6EDA000552E0E /* SuspendFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCF22AD6EDA000552E0E /* SuspendFunction.swift */; };
-		66D4CD0A2AD919DF00552E0E /* ConstructorWithDefaultArgumentsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD092AD919DF00552E0E /* ConstructorWithDefaultArgumentsExample.swift */; };
 		66D4CD462ADD754E00552E0E /* FlowExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD452ADD754E00552E0E /* FlowExample.swift */; };
+		66F10C7D2B19FD1300FFB2C8 /* InteropSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F10C7C2B19FD1300FFB2C8 /* InteropSamples.swift */; };
+		66F10C7F2B19FD2E00FFB2C8 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F10C7E2B19FD2E00FFB2C8 /* ResultView.swift */; };
+		66F10C812B19FDA400FFB2C8 /* SealedInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F10C802B19FDA400FFB2C8 /* SealedInterface.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,13 +39,13 @@
 		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
 		66CD08F72A6A5C0E00D66EFD /* FunctionWithDefaultArgumentsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionWithDefaultArgumentsExample.swift; sourceTree = "<group>"; };
-		66CD08FE2A71559000D66EFD /* JavaDocComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaDocComments.swift; sourceTree = "<group>"; };
-		66CD09092A78109A00D66EFD /* DataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClass.swift; sourceTree = "<group>"; };
 		66CD090D2A79052C00D66EFD /* EnumClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumClass.swift; sourceTree = "<group>"; };
 		66CD09132A790FF300D66EFD /* SealedClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SealedClass.swift; sourceTree = "<group>"; };
 		66D4CCF22AD6EDA000552E0E /* SuspendFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspendFunction.swift; sourceTree = "<group>"; };
-		66D4CD092AD919DF00552E0E /* ConstructorWithDefaultArgumentsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructorWithDefaultArgumentsExample.swift; sourceTree = "<group>"; };
 		66D4CD452ADD754E00552E0E /* FlowExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowExample.swift; sourceTree = "<group>"; };
+		66F10C7C2B19FD1300FFB2C8 /* InteropSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteropSamples.swift; sourceTree = "<group>"; };
+		66F10C7E2B19FD2E00FFB2C8 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		66F10C802B19FDA400FFB2C8 /* SealedInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SealedInterface.swift; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,38 +70,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		66CD08FD2A71556800D66EFD /* Common */ = {
+		66CD09062A780AF800D66EFD /* ClassesAndInterfaces */ = {
 			isa = PBXGroup;
 			children = (
-				66CD08FE2A71559000D66EFD /* JavaDocComments.swift */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		66CD09002A715BA500D66EFD /* DataTypes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DataTypes;
-			sourceTree = "<group>";
-		};
-		66CD09062A780AF800D66EFD /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				66CD09092A78109A00D66EFD /* DataClass.swift */,
 				66CD090D2A79052C00D66EFD /* EnumClass.swift */,
 				66CD09132A790FF300D66EFD /* SealedClass.swift */,
+				66F10C802B19FDA400FFB2C8 /* SealedInterface.swift */,
 			);
-			path = Classes;
+			path = ClassesAndInterfaces;
 			sourceTree = "<group>";
 		};
-		66CD090B2A78FD7800D66EFD /* UsualWorkflow */ = {
+		66CD090B2A78FD7800D66EFD /* MoreAboutFunctions */ = {
 			isa = PBXGroup;
 			children = (
 				66CD08F72A6A5C0E00D66EFD /* FunctionWithDefaultArgumentsExample.swift */,
-				66D4CD092AD919DF00552E0E /* ConstructorWithDefaultArgumentsExample.swift */,
 			);
-			path = UsualWorkflow;
+			path = MoreAboutFunctions;
 			sourceTree = "<group>";
 		};
 		66D4CD422ADD6EDE00552E0E /* Coroutines */ = {
@@ -134,15 +118,15 @@
 			isa = PBXGroup;
 			children = (
 				66D4CD422ADD6EDE00552E0E /* Coroutines */,
-				66CD090B2A78FD7800D66EFD /* UsualWorkflow */,
-				66CD09062A780AF800D66EFD /* Classes */,
-				66CD09002A715BA500D66EFD /* DataTypes */,
-				66CD08FD2A71556800D66EFD /* Common */,
+				66CD090B2A78FD7800D66EFD /* MoreAboutFunctions */,
+				66CD09062A780AF800D66EFD /* ClassesAndInterfaces */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
 				7555FF82242A565900829871 /* ContentView.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
 				2152FB032600AC8F00CF470E /* iOSApp.swift */,
 				058557D7273AAEEB004C7B11 /* Preview Content */,
+				66F10C7C2B19FD1300FFB2C8 /* InteropSamples.swift */,
+				66F10C7E2B19FD2E00FFB2C8 /* ResultView.swift */,
 			);
 			path = iosApp;
 			sourceTree = "<group>";
@@ -249,13 +233,13 @@
 				66D4CCF32AD6EDA000552E0E /* SuspendFunction.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				66CD090E2A79052C00D66EFD /* EnumClass.swift in Sources */,
-				66CD090A2A78109A00D66EFD /* DataClass.swift in Sources */,
+				66F10C7D2B19FD1300FFB2C8 /* InteropSamples.swift in Sources */,
+				66F10C7F2B19FD2E00FFB2C8 /* ResultView.swift in Sources */,
 				66D4CD462ADD754E00552E0E /* FlowExample.swift in Sources */,
 				66CD08F82A6A5C0E00D66EFD /* FunctionWithDefaultArgumentsExample.swift in Sources */,
 				66CD09142A790FF300D66EFD /* SealedClass.swift in Sources */,
-				66D4CD0A2AD919DF00552E0E /* ConstructorWithDefaultArgumentsExample.swift in Sources */,
-				66CD08FF2A71559000D66EFD /* JavaDocComments.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				66F10C812B19FDA400FFB2C8 /* SealedInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +374,7 @@
 					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
 				);
 				INFOPLIST_FILE = iosApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -418,6 +403,7 @@
 					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
 				);
 				INFOPLIST_FILE = iosApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

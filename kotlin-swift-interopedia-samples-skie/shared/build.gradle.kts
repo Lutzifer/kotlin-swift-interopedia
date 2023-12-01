@@ -3,7 +3,7 @@ import co.touchlab.skie.configuration.DefaultArgumentInterop
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
-    id("co.touchlab.skie") version ("0.5.0")
+    id("co.touchlab.skie") version ("0.5.6")
 }
 
 @OptIn(org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi::class)
@@ -36,7 +36,7 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
-                implementation("co.touchlab.skie:configuration-annotations:0.5.0")
+                implementation("co.touchlab.skie:configuration-annotations:0.5.6")
             }
         }
         val commonTest by getting {
@@ -52,13 +52,5 @@ android {
     compileSdk = 33
     defaultConfig {
         minSdk = 21
-    }
-}
-
-skie {
-    features {
-        group {
-            DefaultArgumentInterop.Enabled(true)
-        }
     }
 }
