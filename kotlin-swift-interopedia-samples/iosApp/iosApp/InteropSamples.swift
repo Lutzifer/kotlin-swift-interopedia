@@ -76,6 +76,23 @@ func overviewSection() -> InteropSection {
             protectedFunctionExample()
         },
         InteropSample(
+            title: "@ObjCName",
+            description: """
+                         Gives better Objective-C/Swift names to Kotlin constructs like classes, functions and so on, without actually renaming the Kotlin constructs.
+                         """
+        ) {
+            objCNameExample()
+        },
+        InteropSample(title: "@HiddenFromObjC",
+            description: "Hides a Kotlin declaration from Objective-C/Swift.",
+            action: {
+                hiddenFromObjCExample()
+            }),
+        InteropSample(title: "@ShouldRefineInSwift",
+            description: "Helps to replace a Kotlin declaration with a wrapper written in Swift.") {
+            shouldRefineInSwiftExample()
+        },
+        InteropSample(
             title: "KDoc Comments",
             description:
             """
