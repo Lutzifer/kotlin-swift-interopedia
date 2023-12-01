@@ -1,4 +1,4 @@
-package com.jetbrains.swiftinteropplayground.usualworkflow
+package com.jetbrains.swiftinteropplayground.moreaboutfunctions
 
 import co.touchlab.skie.configuration.annotations.DefaultArgumentInterop
 
