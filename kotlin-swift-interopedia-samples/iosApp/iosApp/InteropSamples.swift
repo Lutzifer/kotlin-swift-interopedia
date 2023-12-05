@@ -34,13 +34,13 @@ func overviewSection() -> InteropSection {
             title: "Classes and functions",
             description: "You can instantiate Kotlin classes and call Kotlin functions from Swift: SimpleClass().simpleFunction()."
         ) {
-            simpleClassAndFunctionExample()
+            classesAndFunctionsExample()
         },
         InteropSample(
             title: "Top-level functions",
             description: "You can access a top-level function via the wrapper class: TopLevelFunctionKt.topLevelFunction()."
         ) {
-            topLevelFunctionExample()
+            topLevelFunctionsExample()
         },
         InteropSample(
             title: "Types",
@@ -130,13 +130,13 @@ func classesAndInterfacesSection() -> InteropSection {
             title: "Enum classes",
             description: "No equivalent enum is generated on the Swift side, and default case must be specified in a switch expression. Instead an object with static elements is generated. Improved interop available with SKIE."
         ) {
-            useEnumClass()
+            enumClassExample()
         },
         InteropSample(
             title: "Inner classes",
             description: "Minor differences in creation syntax."
         ) {
-            createInnerClass()
+            innerClassExample()
         },
         InteropSample(
             title: "Open classes",
@@ -174,20 +174,20 @@ func classesAndInterfacesSection() -> InteropSection {
             title: "Interfaces",
             description: "The interface has become `@protocol`. Xcode turns `val` property into `var` when generating the stubs."
         ) {
-            InterfacesExample().example()
+            interfacesExample()
         },
         InteropSample(
             title: "Fun interfaces",
             description: "You can't create an anonymous class in Swift."
         ) {
-            FunInterfacesExample().example()
+            funInterfacesExample()
         },
 
         InteropSample(
             title: "Sealed Interfaces",
             description: "Separate protocols were generated that were not related to each other."
         ) {
-            SealedInterfacesExample().example()
+            sealedInterfacesExample()
         },
     ])
 }
@@ -201,44 +201,44 @@ func functionsAndPropertiesSection() -> InteropSection {
             You can call public member functions from Swift. Internal or private declarations aren't visible.
             """
         ) {
-            memberFunctionExample()
+            memberFunctionsExample()
         },
         InteropSample(
             title: "Constructors",
             description: "You call constructors to create Kotlin classes from Swift.") {
-            classConstructorExample()
+            constructorsExample()
         },
 
         InteropSample(
             title: "Read-only member properties",
             description: "Member val property is accessible from Swift and is a read-only property in Swift."
         ) {
-            memberReadonlyPropertyExample()
+            readOnlyMemberPropertiesExample()
         },
 
         InteropSample(
             title: "Mutable member properties",
             description: "Member var property is accessible from Swift and is a mutable property in Swift."
         ) {
-            mutableMemberPropertyExample()
+            mutableMemberPropertiesExample()
         },
         InteropSample(
             title: "Top-level val properties",
             description: "You access a top-level property via the wrapper class: TopLevelPropertyKt.topLevelProperty.") {
-            topLevelPropertyExample()
+            topLevelValPropertiesExample()
 
         },
         InteropSample(
             title: "Top-level mutable var properties",
             description: "You access a top-level property via the wrapper class: TopLevelMutablePropertyKt.topLevelProperty."
         ) {
-            topLevelPropertyMutableExample()
+            topLevelMutableVarPropertiesExample()
         },
 
         InteropSample(
             title: "Functions expecting lambda arguments",
             description: "You can use a function expecting one or more lambdas as arguments without issues from Swift.") {
-            functionWithLambdaArgsExample()
+            functionsExpectingLambdaArgumentsExample()
         },
         InteropSample(
             title: "Functions returning function type",
@@ -246,7 +246,7 @@ func functionsAndPropertiesSection() -> InteropSection {
             """
             You can call a Kotlin function returning a lambda. The result has Swift function type, like `() -> String`, so you can easily call it.
             """) {
-            functionReturnsLambdaExample()
+            functionReturningFunctionTypeExample()
         }
     ])
 }
@@ -257,46 +257,46 @@ func moreAboutFunctionsSection() -> InteropSection {
             description: """
                          There are some peculiarities when using the same parameter names. Functions with the same name and parameter names have their parameters renamed.
                          """) {
-            FunctionsWithOverloadsExample().example()
-            FunctionsWithOverloadsExample2().example()
+            functionsWithOverloadsExample1()
+            functionsWithOverloadsExample2()
         },
         InteropSample(title: "Functions with default arguments",
             description: "You always have to specify all the function arguments. Improved interop available with SKIE.") {
-            FunctionWithDefaultArgumentsExample().example()
+            functionsWithDefaultArgumentsExample()
         },
         InteropSample(title: "Constructors with default arguments",
             description: "You always have to specify all the arguments for a constructor.") {
-            ConstructorWithDefaultArgumentsExample().example()
+            constructorsWithDefaultArgumentsExample()
         },
         InteropSample(title: "Functions expecting lambda with receiver",
             description: """
                          Extension function turns into a lambda with a parameter.
                          """) {
-            FunctionWithExtensionExample().example()
+            functionsExpectingLambdaArgumentsExample()
         },
         InteropSample(
             title: "Functions with receivers",
             description: "Functions with receivers turn into functions with parameters, which is not as convenient."
         ) {
-            FunctionWithReceiverExample().example()
+            functionsWithReceivers()
         },
         InteropSample(title: "Functions with value class parameter",
             description: """
                          The function appears in the .h file, but the inline class argument is turned into a basic type.
                          """) {
-            FunctionWithValueClassParameterExample().example()
+            functionsWithValueClassParametersExample()
         },
         InteropSample(title: "Functions with vararg parameter",
             description: """
                          varargs are mapped to `KotlinArray`, not Swift's variardic parameters.
                          """) {
-            FunctionWithVarargParameterExample().example()
+            functionsWithVarargParameterExample()
         },
         InteropSample(title: "Inline functions",
             description: """
                          Inline functions are in the .h file, they can be called. However, they are regular functions and not inlined.
                          """) {
-            InlineFunctionExample().example()
+            inlineFunctionsExample()
         },
     ])
 }
@@ -304,21 +304,21 @@ func moreAboutFunctionsSection() -> InteropSection {
 func genericsSection() -> InteropSection {
     InteropSection(title: "Generics", samples: [
         InteropSample(title: "Generic classes", description: "Some features are supported.") {
-            GenericsClassesExample().example()
+            genericsClassesExample()
         },
         InteropSample(title: "Generic functions", description: "Automatic type inference and nullability are not supported.") {
-            GenericFunctionsExample().example()
+            genericFunctionsExample()
         },
         InteropSample(title: "Bounded generics",
             description: "The generic type restriction is not supported.") {
-            BoundedGenericsExample().example()
+            boundedGenericsExample()
         },
         InteropSample(title: "Contravariant generics",
             description: "Requires a type cast.") {
-            ContravariantGenericsExample().example()
+            contravariantGenericsExample()
         },
         InteropSample(title: "Covariant generics", description: "Requires a type cast.") {
-            CovariantGenericsExample().example()
+            covariantGenericsExample()
         },
         InteropSample(title: "Reified generics",
             description: """
@@ -326,10 +326,10 @@ func genericsSection() -> InteropSection {
 
                          NB: some lines in the examples are commented out as they (correctly) crash the app. Uncomment to see the behaviour.
                          """) {
-            //ReifiedFunctionsExample().example()
+            //reifiedFunctionsExample()
         },
         InteropSample(title: "Star projections", description: "Requires a type cast.") {
-            StarProjectionExample().example()
+            starProjectionExample()
         },
     ])
 }
@@ -340,36 +340,36 @@ func extensionsSection() -> InteropSection {
             title: "Extension function over platform class",
             description: "A wrapper class appears with a function that accepts an object of the desired class."
         ) {
-            ExtensionFunctionOverPlatformClassExample().example()
+            extensionFunctionOverPlatformClassExample()
         },
         InteropSample(
             title: "Extension function over usual class",
             description: "The function can be used on a class object."
         ) {
-            ExtensionFunctionOverUsualClassExample().example()
+            extensionFunctionOverUsualClassExample()
         },
         InteropSample(
             title: "Extension property on platform class",
             description: "A wrapper class appears with a function that accepts an object of the desired class."
         ) {
-            ExtensionPropertyPlatformClassExample().example()
+            extensionPropertyOnPlatformClassExample()
         },
         InteropSample(
             title: "Extension property on usual class",
             description: "The property can be accessed through the class object."
         ) {
-            ExtensionPropertyUsualClassExample().example()
+            extensionPropertyOnUsualClassExample()
         },
         InteropSample(
             title: "Extension property over companion object of platform class",
             description: "There is a property in the .h file, but in Swift it’s impossible to use"
         ) {
-            ExtensionPropertyCompanionObjectPlatformClassExample().example()
+            extensionPropertyOverCompanionObjectOnPlatformClassExample()
         },
         InteropSample(
             title: "Extension property over companion object of usual class",
             description: "The property can be accessed through the companion object.") {
-            ExtensionPropertyCompanionObjectUsualClassExample().example()
+                extensionPropertyOverCompanionObjectOfUsualClassExample()
         }
     ])
 }
@@ -399,7 +399,7 @@ func typesSection() -> InteropSection {
             title: "Collections with custom types",
             description: "Collections with elements of custom types do not require additional mappings."
         ) {
-            collectionsWithCustomTypesDataExample()
+            collectionsWithCustomTypesExample()
         },
         InteropSample(
             title: "Collections with basic types",
@@ -414,12 +414,13 @@ func typesSection() -> InteropSection {
             To adjust mutability, the let, var keywords are used. Additional mappings are required for mutable collections.
             """
         ) {
-            //collectionsMutabilityExample()
-//            listTypeNoCrashes()
-//            listMutableListExample()
-//            setMutableSetExample()
-            mutableSetExample()
-//            mapMutableMapExample()
+            collectionsMutabilityExample()
+            listTypeNoCrashes()
+            listMutableListExample()
+            setMutableSetExample()
+            //Below causes a crash due to an error in Swift
+            //mutableSetExample()
+            mapMutableMapExample()
         },
         InteropSample(
             title: "Unit and Nothing",
@@ -443,25 +444,25 @@ func coroutinesSection() -> InteropSection {
             """
             Translated into callback, experimentally - into async / await. Libraries like SKIE and KMP-NativeCoroutines can be used to improve the interop and provide cancellation support.
             """) {
-            suspendFunctionExample()
+            suspendFunctionsExample()
         },
         InteropSample(
             title: "Suspend functions with KMP-NativeCoroutines",
             description: "Improved interop with KMP-NativeCoroutines using async/await."
         ) {
-            suspendFunctionKMPNativeCoroutinesExample()
+            suspendFunctionsWithKMPNativeCoroutinesExample()
         },
         InteropSample(
             title: "\"Cancellation\" of suspend functions",
             description: "Task cancellation is stubbed. Suspend function returns value, no CancellationError."
         ) {
-            suspendFunctionWithCancellationExample()
+            cancellationOfSuspendFunctionExample()
         },
         InteropSample(
             title: "Cancellation of suspend functions with KMP-NativeCoroutines",
             description: "Improved interop with KMP-NativeCoroutines using async/await. Suspend function fails with CancellationError."
         ) {
-            suspendFunctionKMPNativeCoroutinesWithCancellationExample()
+            cancellationOfSuspendFunctionWithKMPNativeCoroutinesExample()
         },
         InteropSample(
             title: "Flows",
@@ -470,26 +471,26 @@ func coroutinesSection() -> InteropSection {
             Translated into callback, experimentally - into async / await. Generic type arguments are lost. Libraries like SKIE and KMP-NativeCoroutines can be used to improve the interop and provide cancellation support.
             """
         ) {
-            flowExample()
+            flowsExample()
         },
         InteropSample(
             title: "Flows with KMP-NativeCoroutines",
             description: "Improved interop with KMP-NativeCoroutines using async/await."
         ) {
-            flowKMPNativeCoroutinesExample()
+            flowsWithKMPNativeCoroutinesExample()
         },
 
         InteropSample(
             title: "\"Cancellations\" of Flows",
             description: "Task cancellation is stubbed. Flow continues emitting values."
         ) {
-            flowWithCancellationExample()
+            flowsWithCancellationExample()
         },
         InteropSample(
             title: "Cancellations of Flows with KMP-NativeCoroutines",
             description: "Improved interop with KMP-NativeCoroutines using async/await. Flow stops emitting values, but does not give an error."
         ) {
-            flowKMPNativeCoroutinesWithCancellationExample()
+            cancellationOfFlowsWithKMPNativeCoroutinesExample()
         }
     ])
 }

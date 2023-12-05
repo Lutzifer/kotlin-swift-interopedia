@@ -10,16 +10,15 @@ class EmptyClass {
     }
 }
 
-class FunInterfacesExample {
-    func example(){
-        // Now you initialize 'EmptyClass' with a closure that sets
-        // whatever variable properties you want to override:
+func funInterfacesExample(){
+    // Now you initialize 'EmptyClass' with a closure that sets
+    // whatever variable properties you want to override:
 
-        let workingClass = EmptyClass { ec in
-            ec.someFunc = { print("It worked!") }
-            return ec
-        }
-
-        workingClass.someFunc()  // Outputs: "It worked!"
+    let workingClass = EmptyClass { ec in
+        ec.someFunc = { print("It worked!") }
+        return ec
     }
+
+    workingClass.someFunc()  // Outputs: "It worked!"
 }
+

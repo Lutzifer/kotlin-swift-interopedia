@@ -10,14 +10,14 @@
 		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
-		66CD08F82A6A5C0E00D66EFD /* FunctionWithDefaultArgumentsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD08F72A6A5C0E00D66EFD /* FunctionWithDefaultArgumentsExample.swift */; };
-		66CD090E2A79052C00D66EFD /* EnumClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD090D2A79052C00D66EFD /* EnumClass.swift */; };
-		66CD09142A790FF300D66EFD /* SealedClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD09132A790FF300D66EFD /* SealedClass.swift */; };
-		66D4CCF32AD6EDA000552E0E /* SuspendFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCF22AD6EDA000552E0E /* SuspendFunction.swift */; };
-		66D4CD462ADD754E00552E0E /* FlowExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD452ADD754E00552E0E /* FlowExample.swift */; };
+		66CD08F82A6A5C0E00D66EFD /* FunctionsWithDefaultArgumentsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD08F72A6A5C0E00D66EFD /* FunctionsWithDefaultArgumentsExample.swift */; };
+		66CD090E2A79052C00D66EFD /* EnumClassesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD090D2A79052C00D66EFD /* EnumClassesExample.swift */; };
+		66CD09142A790FF300D66EFD /* SealedClassesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD09132A790FF300D66EFD /* SealedClassesExample.swift */; };
+		66D4CCF32AD6EDA000552E0E /* SuspendFunctionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCF22AD6EDA000552E0E /* SuspendFunctionsExample.swift */; };
+		66D4CD462ADD754E00552E0E /* FlowsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD452ADD754E00552E0E /* FlowsExample.swift */; };
 		66F10C7D2B19FD1300FFB2C8 /* InteropSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F10C7C2B19FD1300FFB2C8 /* InteropSamples.swift */; };
 		66F10C7F2B19FD2E00FFB2C8 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F10C7E2B19FD2E00FFB2C8 /* ResultView.swift */; };
-		66F10C812B19FDA400FFB2C8 /* SealedInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F10C802B19FDA400FFB2C8 /* SealedInterface.swift */; };
+		66F10C812B19FDA400FFB2C8 /* SealedInterfaceExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F10C802B19FDA400FFB2C8 /* SealedInterfaceExample.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,14 +38,14 @@
 		058557BA273AAA24004C7B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
-		66CD08F72A6A5C0E00D66EFD /* FunctionWithDefaultArgumentsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionWithDefaultArgumentsExample.swift; sourceTree = "<group>"; };
-		66CD090D2A79052C00D66EFD /* EnumClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumClass.swift; sourceTree = "<group>"; };
-		66CD09132A790FF300D66EFD /* SealedClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SealedClass.swift; sourceTree = "<group>"; };
-		66D4CCF22AD6EDA000552E0E /* SuspendFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspendFunction.swift; sourceTree = "<group>"; };
-		66D4CD452ADD754E00552E0E /* FlowExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowExample.swift; sourceTree = "<group>"; };
+		66CD08F72A6A5C0E00D66EFD /* FunctionsWithDefaultArgumentsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsWithDefaultArgumentsExample.swift; sourceTree = "<group>"; };
+		66CD090D2A79052C00D66EFD /* EnumClassesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumClassesExample.swift; sourceTree = "<group>"; };
+		66CD09132A790FF300D66EFD /* SealedClassesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SealedClassesExample.swift; sourceTree = "<group>"; };
+		66D4CCF22AD6EDA000552E0E /* SuspendFunctionsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspendFunctionsExample.swift; sourceTree = "<group>"; };
+		66D4CD452ADD754E00552E0E /* FlowsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowsExample.swift; sourceTree = "<group>"; };
 		66F10C7C2B19FD1300FFB2C8 /* InteropSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteropSamples.swift; sourceTree = "<group>"; };
 		66F10C7E2B19FD2E00FFB2C8 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
-		66F10C802B19FDA400FFB2C8 /* SealedInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SealedInterface.swift; sourceTree = "<group>"; };
+		66F10C802B19FDA400FFB2C8 /* SealedInterfaceExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SealedInterfaceExample.swift; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,9 +73,9 @@
 		66CD09062A780AF800D66EFD /* ClassesAndInterfaces */ = {
 			isa = PBXGroup;
 			children = (
-				66CD090D2A79052C00D66EFD /* EnumClass.swift */,
-				66CD09132A790FF300D66EFD /* SealedClass.swift */,
-				66F10C802B19FDA400FFB2C8 /* SealedInterface.swift */,
+				66CD090D2A79052C00D66EFD /* EnumClassesExample.swift */,
+				66CD09132A790FF300D66EFD /* SealedClassesExample.swift */,
+				66F10C802B19FDA400FFB2C8 /* SealedInterfaceExample.swift */,
 			);
 			path = ClassesAndInterfaces;
 			sourceTree = "<group>";
@@ -83,7 +83,7 @@
 		66CD090B2A78FD7800D66EFD /* MoreAboutFunctions */ = {
 			isa = PBXGroup;
 			children = (
-				66CD08F72A6A5C0E00D66EFD /* FunctionWithDefaultArgumentsExample.swift */,
+				66CD08F72A6A5C0E00D66EFD /* FunctionsWithDefaultArgumentsExample.swift */,
 			);
 			path = MoreAboutFunctions;
 			sourceTree = "<group>";
@@ -91,8 +91,8 @@
 		66D4CD422ADD6EDE00552E0E /* Coroutines */ = {
 			isa = PBXGroup;
 			children = (
-				66D4CCF22AD6EDA000552E0E /* SuspendFunction.swift */,
-				66D4CD452ADD754E00552E0E /* FlowExample.swift */,
+				66D4CCF22AD6EDA000552E0E /* SuspendFunctionsExample.swift */,
+				66D4CD452ADD754E00552E0E /* FlowsExample.swift */,
 			);
 			path = Coroutines;
 			sourceTree = "<group>";
@@ -230,16 +230,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66D4CCF32AD6EDA000552E0E /* SuspendFunction.swift in Sources */,
+				66D4CCF32AD6EDA000552E0E /* SuspendFunctionsExample.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
-				66CD090E2A79052C00D66EFD /* EnumClass.swift in Sources */,
+				66CD090E2A79052C00D66EFD /* EnumClassesExample.swift in Sources */,
 				66F10C7D2B19FD1300FFB2C8 /* InteropSamples.swift in Sources */,
 				66F10C7F2B19FD2E00FFB2C8 /* ResultView.swift in Sources */,
-				66D4CD462ADD754E00552E0E /* FlowExample.swift in Sources */,
-				66CD08F82A6A5C0E00D66EFD /* FunctionWithDefaultArgumentsExample.swift in Sources */,
-				66CD09142A790FF300D66EFD /* SealedClass.swift in Sources */,
+				66D4CD462ADD754E00552E0E /* FlowsExample.swift in Sources */,
+				66CD08F82A6A5C0E00D66EFD /* FunctionsWithDefaultArgumentsExample.swift in Sources */,
+				66CD09142A790FF300D66EFD /* SealedClassesExample.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
-				66F10C812B19FDA400FFB2C8 /* SealedInterface.swift in Sources */,
+				66F10C812B19FDA400FFB2C8 /* SealedInterfaceExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

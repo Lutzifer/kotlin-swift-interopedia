@@ -1,7 +1,7 @@
 import Foundation
 import shared
 
-func collectionsWithCustomTypesDataExample(){
+func collectionsWithCustomTypesExample(){
     let notPrimitive = NotPrimitiveType(item: "abc123")
     let inList = [notPrimitive]
     let inSet: Set<NotPrimitiveType> = [notPrimitive]

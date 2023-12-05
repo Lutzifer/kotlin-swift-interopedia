@@ -17,12 +17,12 @@ class InterfacesExample : Interfaces {
     // From the strange `val id: String` to `var` by default.
     // But this can be manually replaced with `let`
     let id: String = "default"
+}
+
+func interfacesExample(){
+    let ex = InterfacesExample()
+    print(ex.defaultParams(param1: "123", param2: 234))
+    print(ex.functionWithParam(param1: "abc"))
+    print(ex.simpleFunction())
     
-    func example(){
-        let ex = InterfacesExample()
-        print(ex.defaultParams(param1: "123", param2: 234))
-        print(ex.functionWithParam(param1: "abc"))
-        print(ex.simpleFunction())
-        
-    }
 }

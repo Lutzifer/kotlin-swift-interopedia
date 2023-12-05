@@ -5,7 +5,7 @@ func collectionsWithBasicTypesExample() {
     collectionsExample(intList: [9, 8, 7])
 }
 
-func collectionsExample(intList: [Int]) {
+private func collectionsExample(intList: [Int]) {
     CollectionWithBasicTypesKt.intList(list: [1, 2, 3]) // ok
     let result2: [KotlinInt] = [1, 2, 3] + CommonTypesKt.listType(list: [1, 3, 4]) // ok
     print(result2)

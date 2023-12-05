@@ -5,15 +5,13 @@ func sealedInterfacesExample(){
     switchOnSealedInterfaces(sealedInterfaces: SealedInterfacesFirstImpl())
     switchOnSealedInterfaces(sealedInterfaces: SealedInterfacesSecondImpl())
 }
-    
+
 private func switchOnSealedInterfaces(sealedInterfaces: SealedInterfaces){
-    switch(sealedInterfaces){
-    case is SealedInterfacesFirst: print((sealedInterfaces as! any SealedInterfacesFirst as SealedInterfacesFirst).firstFunctionExample())
-    case is SealedInterfacesSecond: print((sealedInterfaces as! any SealedInterfacesSecond as SealedInterfacesSecond).secondFunctionExample())
-    default: print("default")
+    switch(onEnum(of: sealedInterfaces)){
+    case .first: print((sealedInterfaces as! any SealedInterfacesFirst as SealedInterfacesFirst).firstFunctionExample())
+    case .second: print((sealedInterfaces as! any SealedInterfacesSecond as SealedInterfacesSecond).secondFunctionExample())
     }
 }
-
 
 class SealedInterfacesFirstImpl : SealedInterfacesFirst {
     func firstFunctionExample() -> String {

@@ -10,32 +10,23 @@
 		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
-		662673B02AB28FBF009934DD /* FunctionWithExtensionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662673AF2AB28FBF009934DD /* FunctionWithExtensionExample.swift */; };
-		665A18952A9614E9000087BE /* FunctionReturnsLambda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665A18942A9614E9000087BE /* FunctionReturnsLambda.swift */; };
-		665A18972A961812000087BE /* FunctionReturnsPrimitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665A18962A961812000087BE /* FunctionReturnsPrimitive.swift */; };
+		662673B02AB28FBF009934DD /* FunctionsExpectingLambdasWithReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662673AF2AB28FBF009934DD /* FunctionsExpectingLambdasWithReceiver.swift */; };
 		669CC6102AEA910900DC4B6E /* PublicApiExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CC60F2AEA910800DC4B6E /* PublicApiExample.swift */; };
-		669CC6122AEE9CC200DC4B6E /* SuspendFunctionKMPNativeCoroutinesWithCancellationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CC6112AEE9CC200DC4B6E /* SuspendFunctionKMPNativeCoroutinesWithCancellationExample.swift */; };
-		669CC6142AEE9E2000DC4B6E /* FlowKMPNativeCoroutinesWithCancellationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CC6132AEE9E2000DC4B6E /* FlowKMPNativeCoroutinesWithCancellationExample.swift */; };
 		669CC6162AEF9B4000DC4B6E /* CollectionsWithBasicTypesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CC6152AEF9B4000DC4B6E /* CollectionsWithBasicTypesExample.swift */; };
-		669CC61C2AEF9F0100DC4B6E /* FlowWithCancellationException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CC61B2AEF9F0100DC4B6E /* FlowWithCancellationException.swift */; };
-		669CC61E2AEF9F5400DC4B6E /* SuspendFunctionWithCancellationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CC61D2AEF9F5400DC4B6E /* SuspendFunctionWithCancellationExample.swift */; };
+		669CC61C2AEF9F0100DC4B6E /* CancellationOfFlowsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CC61B2AEF9F0100DC4B6E /* CancellationOfFlowsExample.swift */; };
+		669CC61E2AEF9F5400DC4B6E /* CancellationOfSuspendFunctionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CC61D2AEF9F5400DC4B6E /* CancellationOfSuspendFunctionsExample.swift */; };
 		669CC6202AEFA0CB00DC4B6E /* SuspendFunctionCompletionHandlerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CC61F2AEFA0CB00DC4B6E /* SuspendFunctionCompletionHandlerExample.swift */; };
-		669CC6252AF1480A00DC4B6E /* UsualClassFunctionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CC6242AF1480A00DC4B6E /* UsualClassFunctionExample.swift */; };
-		66CD09082A780B0C00D66EFD /* AbstractClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD09072A780B0C00D66EFD /* AbstractClass.swift */; };
-		66CD090A2A78109A00D66EFD /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD09092A78109A00D66EFD /* DataClass.swift */; };
-		66CD090E2A79052C00D66EFD /* EnumClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD090D2A79052C00D66EFD /* EnumClass.swift */; };
-		66CD09102A790BEC00D66EFD /* InnerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD090F2A790BEC00D66EFD /* InnerClass.swift */; };
-		66CD09122A790D9900D66EFD /* OpenClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD09112A790D9900D66EFD /* OpenClass.swift */; };
-		66CD09142A790FF300D66EFD /* SealedClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD09132A790FF300D66EFD /* SealedClass.swift */; };
-		66CD09162A7925B800D66EFD /* FunctionWithReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD09152A7925B800D66EFD /* FunctionWithReceiver.swift */; };
-		66D4CCD82AD6835D00552E0E /* FunctionWithLambdaArgsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCD72AD6835D00552E0E /* FunctionWithLambdaArgsExample.swift */; };
-		66D4CCDC2AD6B77B00552E0E /* FunctionWithValueClassParameterExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCDB2AD6B77B00552E0E /* FunctionWithValueClassParameterExample.swift */; };
-		66D4CCDE2AD6BB2C00552E0E /* FunctionWithVarargParameterExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCDD2AD6BB2C00552E0E /* FunctionWithVarargParameterExample.swift */; };
+		669CC6252AF1480A00DC4B6E /* MemberFunctionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CC6242AF1480A00DC4B6E /* MemberFunctionsExample.swift */; };
+		66CD090A2A78109A00D66EFD /* DataClassesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD09092A78109A00D66EFD /* DataClassesExample.swift */; };
+		66CD090E2A79052C00D66EFD /* EnumClassesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD090D2A79052C00D66EFD /* EnumClassesExample.swift */; };
+		66CD09102A790BEC00D66EFD /* InnerClassesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD090F2A790BEC00D66EFD /* InnerClassesExample.swift */; };
+		66CD09122A790D9900D66EFD /* OpenClassesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD09112A790D9900D66EFD /* OpenClassesExample.swift */; };
+		66D4CCDE2AD6BB2C00552E0E /* FunctionsWithVarargParameterExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCDD2AD6BB2C00552E0E /* FunctionsWithVarargParameterExample.swift */; };
 		66D4CCE02AD6BDA400552E0E /* FunctionsWithOverloadsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCDF2AD6BDA400552E0E /* FunctionsWithOverloadsExample.swift */; };
 		66D4CCE22AD6BF4700552E0E /* FunctionsWithOverloadsExample2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCE12AD6BF4700552E0E /* FunctionsWithOverloadsExample2.swift */; };
-		66D4CCE42AD6D4C100552E0E /* InlineFunctionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCE32AD6D4C100552E0E /* InlineFunctionExample.swift */; };
-		66D4CCE62AD6DDC400552E0E /* SuspendFunctionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCE52AD6DDC400552E0E /* SuspendFunctionExample.swift */; };
-		66D4CCE82AD6E26900552E0E /* SuspendFunctionKMPNativeCoroutinesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCE72AD6E26900552E0E /* SuspendFunctionKMPNativeCoroutinesExample.swift */; };
+		66D4CCE42AD6D4C100552E0E /* InlineFunctionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCE32AD6D4C100552E0E /* InlineFunctionsExample.swift */; };
+		66D4CCE62AD6DDC400552E0E /* SuspendFunctionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCE52AD6DDC400552E0E /* SuspendFunctionsExample.swift */; };
+		66D4CCE82AD6E26900552E0E /* SuspendFunctionsWithKMPNativeCoroutinesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCE72AD6E26900552E0E /* SuspendFunctionsWithKMPNativeCoroutinesExample.swift */; };
 		66D4CCEB2AD6E40F00552E0E /* KMPNativeCoroutinesAsync in Frameworks */ = {isa = PBXBuildFile; productRef = 66D4CCEA2AD6E40F00552E0E /* KMPNativeCoroutinesAsync */; };
 		66D4CCED2AD6E40F00552E0E /* KMPNativeCoroutinesCombine in Frameworks */ = {isa = PBXBuildFile; productRef = 66D4CCEC2AD6E40F00552E0E /* KMPNativeCoroutinesCombine */; };
 		66D4CCEF2AD6E40F00552E0E /* KMPNativeCoroutinesCore in Frameworks */ = {isa = PBXBuildFile; productRef = 66D4CCEE2AD6E40F00552E0E /* KMPNativeCoroutinesCore */; };
@@ -47,22 +38,14 @@
 		66D4CCFE2AD80F2B00552E0E /* GenericFunctionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CCFD2AD80F2B00552E0E /* GenericFunctionsExample.swift */; };
 		66D4CD022AD813F700552E0E /* ReifiedFunctionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD012AD813F700552E0E /* ReifiedFunctionsExample.swift */; };
 		66D4CD042AD81B6F00552E0E /* StarProjectionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD032AD81B6F00552E0E /* StarProjectionExample.swift */; };
-		66D4CD062AD90CF900552E0E /* CompanionObjectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD052AD90CF900552E0E /* CompanionObjectExample.swift */; };
-		66D4CD082AD9173F00552E0E /* ConstructorWithDefaultArgumentsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD072AD9173F00552E0E /* ConstructorWithDefaultArgumentsExample.swift */; };
+		66D4CD082AD9173F00552E0E /* ConstructorsWithDefaultArgumentsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD072AD9173F00552E0E /* ConstructorsWithDefaultArgumentsExample.swift */; };
 		66D4CD0C2AD91EFF00552E0E /* ExtensionFunctionOverPlatformClassExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD0B2AD91EFF00552E0E /* ExtensionFunctionOverPlatformClassExample.swift */; };
 		66D4CD0E2AD9225000552E0E /* ExtensionFunctionOverUsualClassExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD0D2AD9225000552E0E /* ExtensionFunctionOverUsualClassExample.swift */; };
-		66D4CD122AD9251200552E0E /* ExtensionPropertyCompanionObjectPlatformClassExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD112AD9251200552E0E /* ExtensionPropertyCompanionObjectPlatformClassExample.swift */; };
-		66D4CD142AD928B600552E0E /* ExtensionPropertyCompanionObjectUsualClassExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD132AD928B600552E0E /* ExtensionPropertyCompanionObjectUsualClassExample.swift */; };
-		66D4CD162AD9318400552E0E /* ExtensionPropertyPlatformClassExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD152AD9318400552E0E /* ExtensionPropertyPlatformClassExample.swift */; };
-		66D4CD182AD947BB00552E0E /* ExtensionPropertyUsualClassExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD172AD947BB00552E0E /* ExtensionPropertyUsualClassExample.swift */; };
-		66D4CD1A2AD94B0A00552E0E /* FunctionWithDefaultArgumentsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD192AD94B0A00552E0E /* FunctionWithDefaultArgumentsExample.swift */; };
+		66D4CD142AD928B600552E0E /* ExtensionPropertyOverCompanionObjectOfUsualClassExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD132AD928B600552E0E /* ExtensionPropertyOverCompanionObjectOfUsualClassExample.swift */; };
+		66D4CD1A2AD94B0A00552E0E /* FunctionsWithDefaultArgumentsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD192AD94B0A00552E0E /* FunctionsWithDefaultArgumentsExample.swift */; };
 		66D4CD1C2AD9568500552E0E /* ObjectsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD1B2AD9568500552E0E /* ObjectsExample.swift */; };
-		66D4CD1E2AD9587900552E0E /* TopLevelFunctionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD1D2AD9587900552E0E /* TopLevelFunctionExample.swift */; };
-		66D4CD202AD95B5100552E0E /* TopLevelPropertyExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD1F2AD95B5100552E0E /* TopLevelPropertyExample.swift */; };
-		66D4CD222AD95DC900552E0E /* TopLevelPropertyMutableExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD212AD95DC900552E0E /* TopLevelPropertyMutableExample.swift */; };
-		66D4CD242AD960B000552E0E /* UsualClassConstructorExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD232AD960B000552E0E /* UsualClassConstructorExample.swift */; };
-		66D4CD282AD97BBD00552E0E /* UsualClassValPropertyExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD272AD97BBC00552E0E /* UsualClassValPropertyExample.swift */; };
-		66D4CD2A2AD97D1200552E0E /* UsualClassPropertyMutableExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD292AD97D1200552E0E /* UsualClassPropertyMutableExample.swift */; };
+		66D4CD1E2AD9587900552E0E /* TopLevelFunctionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD1D2AD9587900552E0E /* TopLevelFunctionsExample.swift */; };
+		66D4CD242AD960B000552E0E /* ConstructorsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD232AD960B000552E0E /* ConstructorsExample.swift */; };
 		66D4CD2D2AD9812500552E0E /* FunInterfacesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD2C2AD9812500552E0E /* FunInterfacesExample.swift */; };
 		66D4CD2F2AD9852D00552E0E /* InterfacesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD2E2AD9852D00552E0E /* InterfacesExample.swift */; };
 		66D4CD312ADA8A9800552E0E /* SealedInterfacesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD302ADA8A9800552E0E /* SealedInterfacesExample.swift */; };
@@ -72,15 +55,32 @@
 		66D4CD3C2ADB50F200552E0E /* UnitNothingExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD3B2ADB50F200552E0E /* UnitNothingExample.swift */; };
 		66D4CD3E2ADB548B00552E0E /* BasicTypesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD3D2ADB548B00552E0E /* BasicTypesExample.swift */; };
 		66D4CD402ADB5A8200552E0E /* OptionalBasicTypesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD3F2ADB5A8200552E0E /* OptionalBasicTypesExample.swift */; };
-		66D4CD442ADD715400552E0E /* FlowKMPNativeCoroutinesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD432ADD715400552E0E /* FlowKMPNativeCoroutinesExample.swift */; };
-		66D4CD482ADD784F00552E0E /* FlowExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD472ADD784F00552E0E /* FlowExample.swift */; };
+		66D4CD482ADD784F00552E0E /* FlowsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD472ADD784F00552E0E /* FlowsExample.swift */; };
 		66D4CD4C2ADEA4C000552E0E /* ExceptionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4CD4B2ADEA4C000552E0E /* ExceptionsExample.swift */; };
-		66F10C792B19DC0700FFB2C8 /* HiddenFromSwiftExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F10C782B19DC0700FFB2C8 /* HiddenFromSwiftExample.swift */; };
+		66FD7CEB2B1F6C9E0091EBCD /* CancellationOfFlowsWithKMPNativeCoroutinesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD7CEA2B1F6C9E0091EBCD /* CancellationOfFlowsWithKMPNativeCoroutinesExample.swift */; };
 		7535496A2AE116ED0016A54B /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753549692AE116ED0016A54B /* ResultView.swift */; };
-		7535496C2AE1376C0016A54B /* InteropSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7535496B2AE1376C0016A54B /* InteropSamples.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
-		E59830997CE3DC9E31D1E9C1 /* ObjCNameExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5983E5A1B87DC036ABBEFAD /* ObjCNameExample.swift */; };
-		E598319E705FEB827303DCB9 /* ShouldRefineInSwiftExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59839FB583E1FD27DC551A2 /* ShouldRefineInSwiftExample.swift */; };
+		E59830209A4DFDBD56B4D98A /* TopLevelMutableVarPropertiesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598316803AE2F80AD19CEFF /* TopLevelMutableVarPropertiesExample.swift */; };
+		E598312D66A5A0D4DFB0B288 /* FlowsWithKMPNativeCoroutinesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598336C7B941CA56366BA6F /* FlowsWithKMPNativeCoroutinesExample.swift */; };
+		E598313BBDC59D482C2E61B7 /* HiddenFromSwiftExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59836026EC41B1ECFBEA847 /* HiddenFromSwiftExample.swift */; };
+		E5983273E9E4DA87612FBD1D /* MutableMemberPropertiesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5983CA0F72FA9CDDCFCE0F2 /* MutableMemberPropertiesExample.swift */; };
+		E598339361209D951BEDEE11 /* TopLevelValPropertiesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59831FF4235D50E577BD314 /* TopLevelValPropertiesExample.swift */; };
+		E59834F3942F1913855C91A1 /* FunctionsReturningFunctionTypeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5983F5A522E62A35D35D733 /* FunctionsReturningFunctionTypeExample.swift */; };
+		E598356C750A7933F0EFBF35 /* ClassesAndFunctionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59832ABB62E23D350C926A9 /* ClassesAndFunctionsExample.swift */; };
+		E598357FCF25263BB63E408A /* ReadOnlyMemberPropertiesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598370892160B0B10F9A795 /* ReadOnlyMemberPropertiesExample.swift */; };
+		E598359DF6FA6495636AABE0 /* AbstractClassesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59838C3BE6EB977577781F7 /* AbstractClassesExample.swift */; };
+		E59835ACF7FA6D9C37C6C10B /* SealedClassesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598300AD4FC12D3332C08D2 /* SealedClassesExample.swift */; };
+		E59835C553F2C4A4A740AC15 /* ShouldRefineInSwiftExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598339C4556A7F6042AF79C /* ShouldRefineInSwiftExample.swift */; };
+		E5983847097C31DF6668B125 /* FunctionsExpectingLambdaArgumentsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59835CFD03CA04DEFE7B103 /* FunctionsExpectingLambdaArgumentsExample.swift */; };
+		E59839542E430C76A5568163 /* FunctionsWithReceivers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5983A8ED050D8760870D927 /* FunctionsWithReceivers.swift */; };
+		E5983983EC6ED4078DEC1974 /* ExtensionPropertyOnPlatformClassExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598391CD11EF4EB87A04EA6 /* ExtensionPropertyOnPlatformClassExample.swift */; };
+		E59839ED4A52E3A918076779 /* InteropSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5983B408FC2E94B0FA8A67B /* InteropSamples.swift */; };
+		E5983A571DEB439D81E1FF66 /* ExtensionPropertyOnUsualClassExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59837ABDAC9F1A99F84F9F8 /* ExtensionPropertyOnUsualClassExample.swift */; };
+		E5983A85FF44D72575E56B9F /* CancellationOfSuspendFunctionsWithKMPNativeCoroutinesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5983AE9FECD984234EB5ED5 /* CancellationOfSuspendFunctionsWithKMPNativeCoroutinesExample.swift */; };
+		E5983D79232C697E96E1ADF2 /* FunctionsWithValueClassParametersExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598308A2E7047DFAE4EAA79 /* FunctionsWithValueClassParametersExample.swift */; };
+		E5983E28FAD1444B676E5CAA /* ExtensionPropertyOverCompanionObjectOnPlatformClassExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59833E8B4AB9A748623D3F5 /* ExtensionPropertyOverCompanionObjectOnPlatformClassExample.swift */; };
+		E5983ED5F81A85F95F863166 /* CompanionObjectsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59830EA504C5EC97884AD7E /* CompanionObjectsExample.swift */; };
+		E5983FE321C7FE26A5AD200E /* ObjCNameExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5983EC634A304D78C9DF93A /* ObjCNameExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -100,32 +100,23 @@
 		058557BA273AAA24004C7B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
-		662673AF2AB28FBF009934DD /* FunctionWithExtensionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionWithExtensionExample.swift; sourceTree = "<group>"; };
-		665A18942A9614E9000087BE /* FunctionReturnsLambda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionReturnsLambda.swift; sourceTree = "<group>"; };
-		665A18962A961812000087BE /* FunctionReturnsPrimitive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionReturnsPrimitive.swift; sourceTree = "<group>"; };
+		662673AF2AB28FBF009934DD /* FunctionsExpectingLambdasWithReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsExpectingLambdasWithReceiver.swift; sourceTree = "<group>"; };
 		669CC60F2AEA910800DC4B6E /* PublicApiExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicApiExample.swift; sourceTree = "<group>"; };
-		669CC6112AEE9CC200DC4B6E /* SuspendFunctionKMPNativeCoroutinesWithCancellationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspendFunctionKMPNativeCoroutinesWithCancellationExample.swift; sourceTree = "<group>"; };
-		669CC6132AEE9E2000DC4B6E /* FlowKMPNativeCoroutinesWithCancellationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowKMPNativeCoroutinesWithCancellationExample.swift; sourceTree = "<group>"; };
 		669CC6152AEF9B4000DC4B6E /* CollectionsWithBasicTypesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsWithBasicTypesExample.swift; sourceTree = "<group>"; };
-		669CC61B2AEF9F0100DC4B6E /* FlowWithCancellationException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowWithCancellationException.swift; sourceTree = "<group>"; };
-		669CC61D2AEF9F5400DC4B6E /* SuspendFunctionWithCancellationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspendFunctionWithCancellationExample.swift; sourceTree = "<group>"; };
+		669CC61B2AEF9F0100DC4B6E /* CancellationOfFlowsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellationOfFlowsExample.swift; sourceTree = "<group>"; };
+		669CC61D2AEF9F5400DC4B6E /* CancellationOfSuspendFunctionsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellationOfSuspendFunctionsExample.swift; sourceTree = "<group>"; };
 		669CC61F2AEFA0CB00DC4B6E /* SuspendFunctionCompletionHandlerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspendFunctionCompletionHandlerExample.swift; sourceTree = "<group>"; };
-		669CC6242AF1480A00DC4B6E /* UsualClassFunctionExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsualClassFunctionExample.swift; sourceTree = "<group>"; };
-		66CD09072A780B0C00D66EFD /* AbstractClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractClass.swift; sourceTree = "<group>"; };
-		66CD09092A78109A00D66EFD /* DataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClass.swift; sourceTree = "<group>"; };
-		66CD090D2A79052C00D66EFD /* EnumClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumClass.swift; sourceTree = "<group>"; };
-		66CD090F2A790BEC00D66EFD /* InnerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerClass.swift; sourceTree = "<group>"; };
-		66CD09112A790D9900D66EFD /* OpenClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenClass.swift; sourceTree = "<group>"; };
-		66CD09132A790FF300D66EFD /* SealedClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SealedClass.swift; sourceTree = "<group>"; };
-		66CD09152A7925B800D66EFD /* FunctionWithReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionWithReceiver.swift; sourceTree = "<group>"; };
-		66D4CCD72AD6835D00552E0E /* FunctionWithLambdaArgsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionWithLambdaArgsExample.swift; sourceTree = "<group>"; };
-		66D4CCDB2AD6B77B00552E0E /* FunctionWithValueClassParameterExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionWithValueClassParameterExample.swift; sourceTree = "<group>"; };
-		66D4CCDD2AD6BB2C00552E0E /* FunctionWithVarargParameterExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionWithVarargParameterExample.swift; sourceTree = "<group>"; };
+		669CC6242AF1480A00DC4B6E /* MemberFunctionsExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberFunctionsExample.swift; sourceTree = "<group>"; };
+		66CD09092A78109A00D66EFD /* DataClassesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClassesExample.swift; sourceTree = "<group>"; };
+		66CD090D2A79052C00D66EFD /* EnumClassesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumClassesExample.swift; sourceTree = "<group>"; };
+		66CD090F2A790BEC00D66EFD /* InnerClassesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerClassesExample.swift; sourceTree = "<group>"; };
+		66CD09112A790D9900D66EFD /* OpenClassesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenClassesExample.swift; sourceTree = "<group>"; };
+		66D4CCDD2AD6BB2C00552E0E /* FunctionsWithVarargParameterExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsWithVarargParameterExample.swift; sourceTree = "<group>"; };
 		66D4CCDF2AD6BDA400552E0E /* FunctionsWithOverloadsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsWithOverloadsExample.swift; sourceTree = "<group>"; };
 		66D4CCE12AD6BF4700552E0E /* FunctionsWithOverloadsExample2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsWithOverloadsExample2.swift; sourceTree = "<group>"; };
-		66D4CCE32AD6D4C100552E0E /* InlineFunctionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineFunctionExample.swift; sourceTree = "<group>"; };
-		66D4CCE52AD6DDC400552E0E /* SuspendFunctionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspendFunctionExample.swift; sourceTree = "<group>"; };
-		66D4CCE72AD6E26900552E0E /* SuspendFunctionKMPNativeCoroutinesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspendFunctionKMPNativeCoroutinesExample.swift; sourceTree = "<group>"; };
+		66D4CCE32AD6D4C100552E0E /* InlineFunctionsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineFunctionsExample.swift; sourceTree = "<group>"; };
+		66D4CCE52AD6DDC400552E0E /* SuspendFunctionsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspendFunctionsExample.swift; sourceTree = "<group>"; };
+		66D4CCE72AD6E26900552E0E /* SuspendFunctionsWithKMPNativeCoroutinesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspendFunctionsWithKMPNativeCoroutinesExample.swift; sourceTree = "<group>"; };
 		66D4CCF52AD7EAF000552E0E /* BoundedGenericsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundedGenericsExample.swift; sourceTree = "<group>"; };
 		66D4CCF72AD7EF7600552E0E /* ContravariantGenericsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContravariantGenericsExample.swift; sourceTree = "<group>"; };
 		66D4CCF92AD7F24E00552E0E /* CovariantGenericsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovariantGenericsExample.swift; sourceTree = "<group>"; };
@@ -133,22 +124,14 @@
 		66D4CCFD2AD80F2B00552E0E /* GenericFunctionsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericFunctionsExample.swift; sourceTree = "<group>"; };
 		66D4CD012AD813F700552E0E /* ReifiedFunctionsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReifiedFunctionsExample.swift; sourceTree = "<group>"; };
 		66D4CD032AD81B6F00552E0E /* StarProjectionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarProjectionExample.swift; sourceTree = "<group>"; };
-		66D4CD052AD90CF900552E0E /* CompanionObjectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionObjectExample.swift; sourceTree = "<group>"; };
-		66D4CD072AD9173F00552E0E /* ConstructorWithDefaultArgumentsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructorWithDefaultArgumentsExample.swift; sourceTree = "<group>"; };
+		66D4CD072AD9173F00552E0E /* ConstructorsWithDefaultArgumentsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructorsWithDefaultArgumentsExample.swift; sourceTree = "<group>"; };
 		66D4CD0B2AD91EFF00552E0E /* ExtensionFunctionOverPlatformClassExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionFunctionOverPlatformClassExample.swift; sourceTree = "<group>"; };
 		66D4CD0D2AD9225000552E0E /* ExtensionFunctionOverUsualClassExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionFunctionOverUsualClassExample.swift; sourceTree = "<group>"; };
-		66D4CD112AD9251200552E0E /* ExtensionPropertyCompanionObjectPlatformClassExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPropertyCompanionObjectPlatformClassExample.swift; sourceTree = "<group>"; };
-		66D4CD132AD928B600552E0E /* ExtensionPropertyCompanionObjectUsualClassExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPropertyCompanionObjectUsualClassExample.swift; sourceTree = "<group>"; };
-		66D4CD152AD9318400552E0E /* ExtensionPropertyPlatformClassExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPropertyPlatformClassExample.swift; sourceTree = "<group>"; };
-		66D4CD172AD947BB00552E0E /* ExtensionPropertyUsualClassExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPropertyUsualClassExample.swift; sourceTree = "<group>"; };
-		66D4CD192AD94B0A00552E0E /* FunctionWithDefaultArgumentsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionWithDefaultArgumentsExample.swift; sourceTree = "<group>"; };
+		66D4CD132AD928B600552E0E /* ExtensionPropertyOverCompanionObjectOfUsualClassExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPropertyOverCompanionObjectOfUsualClassExample.swift; sourceTree = "<group>"; };
+		66D4CD192AD94B0A00552E0E /* FunctionsWithDefaultArgumentsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsWithDefaultArgumentsExample.swift; sourceTree = "<group>"; };
 		66D4CD1B2AD9568500552E0E /* ObjectsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsExample.swift; sourceTree = "<group>"; };
-		66D4CD1D2AD9587900552E0E /* TopLevelFunctionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLevelFunctionExample.swift; sourceTree = "<group>"; };
-		66D4CD1F2AD95B5100552E0E /* TopLevelPropertyExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLevelPropertyExample.swift; sourceTree = "<group>"; };
-		66D4CD212AD95DC900552E0E /* TopLevelPropertyMutableExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLevelPropertyMutableExample.swift; sourceTree = "<group>"; };
-		66D4CD232AD960B000552E0E /* UsualClassConstructorExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsualClassConstructorExample.swift; sourceTree = "<group>"; };
-		66D4CD272AD97BBC00552E0E /* UsualClassValPropertyExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsualClassValPropertyExample.swift; sourceTree = "<group>"; };
-		66D4CD292AD97D1200552E0E /* UsualClassPropertyMutableExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsualClassPropertyMutableExample.swift; sourceTree = "<group>"; };
+		66D4CD1D2AD9587900552E0E /* TopLevelFunctionsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLevelFunctionsExample.swift; sourceTree = "<group>"; };
+		66D4CD232AD960B000552E0E /* ConstructorsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructorsExample.swift; sourceTree = "<group>"; };
 		66D4CD2C2AD9812500552E0E /* FunInterfacesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunInterfacesExample.swift; sourceTree = "<group>"; };
 		66D4CD2E2AD9852D00552E0E /* InterfacesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfacesExample.swift; sourceTree = "<group>"; };
 		66D4CD302ADA8A9800552E0E /* SealedInterfacesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SealedInterfacesExample.swift; sourceTree = "<group>"; };
@@ -158,17 +141,34 @@
 		66D4CD3B2ADB50F200552E0E /* UnitNothingExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitNothingExample.swift; sourceTree = "<group>"; };
 		66D4CD3D2ADB548B00552E0E /* BasicTypesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTypesExample.swift; sourceTree = "<group>"; };
 		66D4CD3F2ADB5A8200552E0E /* OptionalBasicTypesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalBasicTypesExample.swift; sourceTree = "<group>"; };
-		66D4CD432ADD715400552E0E /* FlowKMPNativeCoroutinesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowKMPNativeCoroutinesExample.swift; sourceTree = "<group>"; };
-		66D4CD472ADD784F00552E0E /* FlowExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowExample.swift; sourceTree = "<group>"; };
+		66D4CD472ADD784F00552E0E /* FlowsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowsExample.swift; sourceTree = "<group>"; };
 		66D4CD4B2ADEA4C000552E0E /* ExceptionsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExceptionsExample.swift; sourceTree = "<group>"; };
-		66F10C782B19DC0700FFB2C8 /* HiddenFromSwiftExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenFromSwiftExample.swift; sourceTree = "<group>"; };
+		66FD7CEA2B1F6C9E0091EBCD /* CancellationOfFlowsWithKMPNativeCoroutinesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellationOfFlowsWithKMPNativeCoroutinesExample.swift; sourceTree = "<group>"; };
 		753549692AE116ED0016A54B /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
-		7535496B2AE1376C0016A54B /* InteropSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteropSamples.swift; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E59839FB583E1FD27DC551A2 /* ShouldRefineInSwiftExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShouldRefineInSwiftExample.swift; sourceTree = "<group>"; };
-		E5983E5A1B87DC036ABBEFAD /* ObjCNameExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjCNameExample.swift; sourceTree = "<group>"; };
+		E598300AD4FC12D3332C08D2 /* SealedClassesExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SealedClassesExample.swift; sourceTree = "<group>"; };
+		E598308A2E7047DFAE4EAA79 /* FunctionsWithValueClassParametersExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsWithValueClassParametersExample.swift; sourceTree = "<group>"; };
+		E59830EA504C5EC97884AD7E /* CompanionObjectsExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanionObjectsExample.swift; sourceTree = "<group>"; };
+		E598316803AE2F80AD19CEFF /* TopLevelMutableVarPropertiesExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopLevelMutableVarPropertiesExample.swift; sourceTree = "<group>"; };
+		E59831FF4235D50E577BD314 /* TopLevelValPropertiesExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopLevelValPropertiesExample.swift; sourceTree = "<group>"; };
+		E59832ABB62E23D350C926A9 /* ClassesAndFunctionsExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassesAndFunctionsExample.swift; sourceTree = "<group>"; };
+		E598336C7B941CA56366BA6F /* FlowsWithKMPNativeCoroutinesExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowsWithKMPNativeCoroutinesExample.swift; sourceTree = "<group>"; };
+		E598339C4556A7F6042AF79C /* ShouldRefineInSwiftExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShouldRefineInSwiftExample.swift; sourceTree = "<group>"; };
+		E59833E8B4AB9A748623D3F5 /* ExtensionPropertyOverCompanionObjectOnPlatformClassExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionPropertyOverCompanionObjectOnPlatformClassExample.swift; sourceTree = "<group>"; };
+		E59835CFD03CA04DEFE7B103 /* FunctionsExpectingLambdaArgumentsExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsExpectingLambdaArgumentsExample.swift; sourceTree = "<group>"; };
+		E59836026EC41B1ECFBEA847 /* HiddenFromSwiftExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiddenFromSwiftExample.swift; sourceTree = "<group>"; };
+		E598370892160B0B10F9A795 /* ReadOnlyMemberPropertiesExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadOnlyMemberPropertiesExample.swift; sourceTree = "<group>"; };
+		E59837ABDAC9F1A99F84F9F8 /* ExtensionPropertyOnUsualClassExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionPropertyOnUsualClassExample.swift; sourceTree = "<group>"; };
+		E59838C3BE6EB977577781F7 /* AbstractClassesExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractClassesExample.swift; sourceTree = "<group>"; };
+		E598391CD11EF4EB87A04EA6 /* ExtensionPropertyOnPlatformClassExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionPropertyOnPlatformClassExample.swift; sourceTree = "<group>"; };
+		E5983A8ED050D8760870D927 /* FunctionsWithReceivers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsWithReceivers.swift; sourceTree = "<group>"; };
+		E5983AE9FECD984234EB5ED5 /* CancellationOfSuspendFunctionsWithKMPNativeCoroutinesExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancellationOfSuspendFunctionsWithKMPNativeCoroutinesExample.swift; sourceTree = "<group>"; };
+		E5983B408FC2E94B0FA8A67B /* InteropSamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteropSamples.swift; sourceTree = "<group>"; };
+		E5983CA0F72FA9CDDCFCE0F2 /* MutableMemberPropertiesExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableMemberPropertiesExample.swift; sourceTree = "<group>"; };
+		E5983EC634A304D78C9DF93A /* ObjCNameExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjCNameExample.swift; sourceTree = "<group>"; };
+		E5983F5A522E62A35D35D733 /* FunctionsReturningFunctionTypeExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsReturningFunctionTypeExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,10 +199,10 @@
 			children = (
 				66D4CD0B2AD91EFF00552E0E /* ExtensionFunctionOverPlatformClassExample.swift */,
 				66D4CD0D2AD9225000552E0E /* ExtensionFunctionOverUsualClassExample.swift */,
-				66D4CD112AD9251200552E0E /* ExtensionPropertyCompanionObjectPlatformClassExample.swift */,
-				66D4CD132AD928B600552E0E /* ExtensionPropertyCompanionObjectUsualClassExample.swift */,
-				66D4CD152AD9318400552E0E /* ExtensionPropertyPlatformClassExample.swift */,
-				66D4CD172AD947BB00552E0E /* ExtensionPropertyUsualClassExample.swift */,
+				66D4CD132AD928B600552E0E /* ExtensionPropertyOverCompanionObjectOfUsualClassExample.swift */,
+				E598391CD11EF4EB87A04EA6 /* ExtensionPropertyOnPlatformClassExample.swift */,
+				E59837ABDAC9F1A99F84F9F8 /* ExtensionPropertyOnUsualClassExample.swift */,
+				E59833E8B4AB9A748623D3F5 /* ExtensionPropertyOverCompanionObjectOnPlatformClassExample.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -210,13 +210,13 @@
 		66CD08FD2A71556800D66EFD /* Overview */ = {
 			isa = PBXGroup;
 			children = (
-				665A18962A961812000087BE /* FunctionReturnsPrimitive.swift */,
-				66D4CD1D2AD9587900552E0E /* TopLevelFunctionExample.swift */,
+				66D4CD1D2AD9587900552E0E /* TopLevelFunctionsExample.swift */,
 				66D4CD4B2ADEA4C000552E0E /* ExceptionsExample.swift */,
 				669CC60F2AEA910800DC4B6E /* PublicApiExample.swift */,
-				E5983E5A1B87DC036ABBEFAD /* ObjCNameExample.swift */,
-				66F10C782B19DC0700FFB2C8 /* HiddenFromSwiftExample.swift */,
-				E59839FB583E1FD27DC551A2 /* ShouldRefineInSwiftExample.swift */,
+				E59836026EC41B1ECFBEA847 /* HiddenFromSwiftExample.swift */,
+				E5983EC634A304D78C9DF93A /* ObjCNameExample.swift */,
+				E598339C4556A7F6042AF79C /* ShouldRefineInSwiftExample.swift */,
+				E59832ABB62E23D350C926A9 /* ClassesAndFunctionsExample.swift */,
 			);
 			path = Overview;
 			sourceTree = "<group>";
@@ -224,17 +224,17 @@
 		66CD09062A780AF800D66EFD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				66D4CD052AD90CF900552E0E /* CompanionObjectExample.swift */,
 				66D4CD1B2AD9568500552E0E /* ObjectsExample.swift */,
 				66D4CD2C2AD9812500552E0E /* FunInterfacesExample.swift */,
 				66D4CD2E2AD9852D00552E0E /* InterfacesExample.swift */,
 				66D4CD302ADA8A9800552E0E /* SealedInterfacesExample.swift */,
-				66CD09072A780B0C00D66EFD /* AbstractClass.swift */,
-				66CD09092A78109A00D66EFD /* DataClass.swift */,
-				66CD090D2A79052C00D66EFD /* EnumClass.swift */,
-				66CD090F2A790BEC00D66EFD /* InnerClass.swift */,
-				66CD09112A790D9900D66EFD /* OpenClass.swift */,
-				66CD09132A790FF300D66EFD /* SealedClass.swift */,
+				66CD09092A78109A00D66EFD /* DataClassesExample.swift */,
+				66CD090D2A79052C00D66EFD /* EnumClassesExample.swift */,
+				66CD090F2A790BEC00D66EFD /* InnerClassesExample.swift */,
+				66CD09112A790D9900D66EFD /* OpenClassesExample.swift */,
+				E59830EA504C5EC97884AD7E /* CompanionObjectsExample.swift */,
+				E598300AD4FC12D3332C08D2 /* SealedClassesExample.swift */,
+				E59838C3BE6EB977577781F7 /* AbstractClassesExample.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -244,13 +244,13 @@
 			children = (
 				66D4CCDF2AD6BDA400552E0E /* FunctionsWithOverloadsExample.swift */,
 				66D4CCE12AD6BF4700552E0E /* FunctionsWithOverloadsExample2.swift */,
-				66D4CD192AD94B0A00552E0E /* FunctionWithDefaultArgumentsExample.swift */,
-				66D4CD072AD9173F00552E0E /* ConstructorWithDefaultArgumentsExample.swift */,
-				66CD09152A7925B800D66EFD /* FunctionWithReceiver.swift */,
-				662673AF2AB28FBF009934DD /* FunctionWithExtensionExample.swift */,
-				66D4CCDB2AD6B77B00552E0E /* FunctionWithValueClassParameterExample.swift */,
-				66D4CCDD2AD6BB2C00552E0E /* FunctionWithVarargParameterExample.swift */,
-				66D4CCE32AD6D4C100552E0E /* InlineFunctionExample.swift */,
+				66D4CD192AD94B0A00552E0E /* FunctionsWithDefaultArgumentsExample.swift */,
+				66D4CD072AD9173F00552E0E /* ConstructorsWithDefaultArgumentsExample.swift */,
+				662673AF2AB28FBF009934DD /* FunctionsExpectingLambdasWithReceiver.swift */,
+				66D4CCDD2AD6BB2C00552E0E /* FunctionsWithVarargParameterExample.swift */,
+				66D4CCE32AD6D4C100552E0E /* InlineFunctionsExample.swift */,
+				E5983A8ED050D8760870D927 /* FunctionsWithReceivers.swift */,
+				E598308A2E7047DFAE4EAA79 /* FunctionsWithValueClassParametersExample.swift */,
 			);
 			path = MoreAboutFunctions;
 			sourceTree = "<group>";
@@ -258,14 +258,14 @@
 		66CD090C2A78FF8500D66EFD /* FunctionsAndProperties */ = {
 			isa = PBXGroup;
 			children = (
-				669CC6242AF1480A00DC4B6E /* UsualClassFunctionExample.swift */,
-				66D4CD232AD960B000552E0E /* UsualClassConstructorExample.swift */,
-				66D4CD272AD97BBC00552E0E /* UsualClassValPropertyExample.swift */,
-				66D4CD292AD97D1200552E0E /* UsualClassPropertyMutableExample.swift */,
-				66D4CD1F2AD95B5100552E0E /* TopLevelPropertyExample.swift */,
-				66D4CD212AD95DC900552E0E /* TopLevelPropertyMutableExample.swift */,
-				66D4CCD72AD6835D00552E0E /* FunctionWithLambdaArgsExample.swift */,
-				665A18942A9614E9000087BE /* FunctionReturnsLambda.swift */,
+				669CC6242AF1480A00DC4B6E /* MemberFunctionsExample.swift */,
+				66D4CD232AD960B000552E0E /* ConstructorsExample.swift */,
+				E598370892160B0B10F9A795 /* ReadOnlyMemberPropertiesExample.swift */,
+				E5983CA0F72FA9CDDCFCE0F2 /* MutableMemberPropertiesExample.swift */,
+				E59831FF4235D50E577BD314 /* TopLevelValPropertiesExample.swift */,
+				E598316803AE2F80AD19CEFF /* TopLevelMutableVarPropertiesExample.swift */,
+				E59835CFD03CA04DEFE7B103 /* FunctionsExpectingLambdaArgumentsExample.swift */,
+				E5983F5A522E62A35D35D733 /* FunctionsReturningFunctionTypeExample.swift */,
 			);
 			path = FunctionsAndProperties;
 			sourceTree = "<group>";
@@ -301,15 +301,15 @@
 		66D4CD412ADD6CC700552E0E /* Coroutines */ = {
 			isa = PBXGroup;
 			children = (
-				66D4CCE52AD6DDC400552E0E /* SuspendFunctionExample.swift */,
+				66D4CCE52AD6DDC400552E0E /* SuspendFunctionsExample.swift */,
 				669CC61F2AEFA0CB00DC4B6E /* SuspendFunctionCompletionHandlerExample.swift */,
-				66D4CCE72AD6E26900552E0E /* SuspendFunctionKMPNativeCoroutinesExample.swift */,
-				66D4CD432ADD715400552E0E /* FlowKMPNativeCoroutinesExample.swift */,
-				66D4CD472ADD784F00552E0E /* FlowExample.swift */,
-				669CC6112AEE9CC200DC4B6E /* SuspendFunctionKMPNativeCoroutinesWithCancellationExample.swift */,
-				669CC6132AEE9E2000DC4B6E /* FlowKMPNativeCoroutinesWithCancellationExample.swift */,
-				669CC61B2AEF9F0100DC4B6E /* FlowWithCancellationException.swift */,
-				669CC61D2AEF9F5400DC4B6E /* SuspendFunctionWithCancellationExample.swift */,
+				66D4CCE72AD6E26900552E0E /* SuspendFunctionsWithKMPNativeCoroutinesExample.swift */,
+				66D4CD472ADD784F00552E0E /* FlowsExample.swift */,
+				669CC61B2AEF9F0100DC4B6E /* CancellationOfFlowsExample.swift */,
+				669CC61D2AEF9F5400DC4B6E /* CancellationOfSuspendFunctionsExample.swift */,
+				E5983AE9FECD984234EB5ED5 /* CancellationOfSuspendFunctionsWithKMPNativeCoroutinesExample.swift */,
+				E598336C7B941CA56366BA6F /* FlowsWithKMPNativeCoroutinesExample.swift */,
+				66FD7CEA2B1F6C9E0091EBCD /* CancellationOfFlowsWithKMPNativeCoroutinesExample.swift */,
 			);
 			path = Coroutines;
 			sourceTree = "<group>";
@@ -320,7 +320,6 @@
 				7555FF7D242A565900829871 /* iosApp */,
 				7555FF7C242A565900829871 /* Products */,
 				7555FFB0242A642200829871 /* Frameworks */,
-				E5983519E4CA8889A93ADA6B /* configuration */,
 			);
 			sourceTree = "<group>";
 		};
@@ -349,7 +348,7 @@
 				2152FB032600AC8F00CF470E /* iOSApp.swift */,
 				058557D7273AAEEB004C7B11 /* Preview Content */,
 				753549692AE116ED0016A54B /* ResultView.swift */,
-				7535496B2AE1376C0016A54B /* InteropSamples.swift */,
+				E5983B408FC2E94B0FA8A67B /* InteropSamples.swift */,
 			);
 			path = iosApp;
 			sourceTree = "<group>";
@@ -359,14 +358,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E5983519E4CA8889A93ADA6B /* configuration */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = configuration;
-			path = iosApp.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -470,74 +461,74 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66CD09082A780B0C00D66EFD /* AbstractClass.swift in Sources */,
-				669CC6252AF1480A00DC4B6E /* UsualClassFunctionExample.swift in Sources */,
+				669CC6252AF1480A00DC4B6E /* MemberFunctionsExample.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				66D4CD1C2AD9568500552E0E /* ObjectsExample.swift in Sources */,
-				66CD09162A7925B800D66EFD /* FunctionWithReceiver.swift in Sources */,
 				669CC6102AEA910900DC4B6E /* PublicApiExample.swift in Sources */,
 				66D4CD0C2AD91EFF00552E0E /* ExtensionFunctionOverPlatformClassExample.swift in Sources */,
-				669CC61C2AEF9F0100DC4B6E /* FlowWithCancellationException.swift in Sources */,
-				66D4CD282AD97BBD00552E0E /* UsualClassValPropertyExample.swift in Sources */,
-				66D4CD1E2AD9587900552E0E /* TopLevelFunctionExample.swift in Sources */,
+				669CC61C2AEF9F0100DC4B6E /* CancellationOfFlowsExample.swift in Sources */,
+				66D4CD1E2AD9587900552E0E /* TopLevelFunctionsExample.swift in Sources */,
 				66D4CCFC2AD8095400552E0E /* GenericsClassesExample.swift in Sources */,
-				66D4CD442ADD715400552E0E /* FlowKMPNativeCoroutinesExample.swift in Sources */,
-				66CD090E2A79052C00D66EFD /* EnumClass.swift in Sources */,
-				669CC61E2AEF9F5400DC4B6E /* SuspendFunctionWithCancellationExample.swift in Sources */,
+				66CD090E2A79052C00D66EFD /* EnumClassesExample.swift in Sources */,
+				669CC61E2AEF9F5400DC4B6E /* CancellationOfSuspendFunctionsExample.swift in Sources */,
 				66D4CCF62AD7EAF000552E0E /* BoundedGenericsExample.swift in Sources */,
 				66D4CD2D2AD9812500552E0E /* FunInterfacesExample.swift in Sources */,
 				66D4CD3E2ADB548B00552E0E /* BasicTypesExample.swift in Sources */,
-				662673B02AB28FBF009934DD /* FunctionWithExtensionExample.swift in Sources */,
-				66D4CD062AD90CF900552E0E /* CompanionObjectExample.swift in Sources */,
-				66D4CD1A2AD94B0A00552E0E /* FunctionWithDefaultArgumentsExample.swift in Sources */,
+				662673B02AB28FBF009934DD /* FunctionsExpectingLambdasWithReceiver.swift in Sources */,
+				66D4CD1A2AD94B0A00552E0E /* FunctionsWithDefaultArgumentsExample.swift in Sources */,
 				66D4CD312ADA8A9800552E0E /* SealedInterfacesExample.swift in Sources */,
-				66CD09122A790D9900D66EFD /* OpenClass.swift in Sources */,
-				66CD090A2A78109A00D66EFD /* DataClass.swift in Sources */,
-				66D4CD162AD9318400552E0E /* ExtensionPropertyPlatformClassExample.swift in Sources */,
+				66CD09122A790D9900D66EFD /* OpenClassesExample.swift in Sources */,
+				66CD090A2A78109A00D66EFD /* DataClassesExample.swift in Sources */,
 				66D4CD2F2AD9852D00552E0E /* InterfacesExample.swift in Sources */,
-				66D4CD142AD928B600552E0E /* ExtensionPropertyCompanionObjectUsualClassExample.swift in Sources */,
-				66D4CCE42AD6D4C100552E0E /* InlineFunctionExample.swift in Sources */,
+				66D4CD142AD928B600552E0E /* ExtensionPropertyOverCompanionObjectOfUsualClassExample.swift in Sources */,
+				66D4CCE42AD6D4C100552E0E /* InlineFunctionsExample.swift in Sources */,
 				66D4CCE02AD6BDA400552E0E /* FunctionsWithOverloadsExample.swift in Sources */,
-				66CD09142A790FF300D66EFD /* SealedClass.swift in Sources */,
-				66D4CCE82AD6E26900552E0E /* SuspendFunctionKMPNativeCoroutinesExample.swift in Sources */,
-				66D4CD122AD9251200552E0E /* ExtensionPropertyCompanionObjectPlatformClassExample.swift in Sources */,
-				66D4CD182AD947BB00552E0E /* ExtensionPropertyUsualClassExample.swift in Sources */,
-				66D4CD202AD95B5100552E0E /* TopLevelPropertyExample.swift in Sources */,
-				66D4CD222AD95DC900552E0E /* TopLevelPropertyMutableExample.swift in Sources */,
-				66D4CCE62AD6DDC400552E0E /* SuspendFunctionExample.swift in Sources */,
-				669CC6122AEE9CC200DC4B6E /* SuspendFunctionKMPNativeCoroutinesWithCancellationExample.swift in Sources */,
-				66F10C792B19DC0700FFB2C8 /* HiddenFromSwiftExample.swift in Sources */,
-				66D4CD082AD9173F00552E0E /* ConstructorWithDefaultArgumentsExample.swift in Sources */,
-				665A18952A9614E9000087BE /* FunctionReturnsLambda.swift in Sources */,
-				66D4CCD82AD6835D00552E0E /* FunctionWithLambdaArgsExample.swift in Sources */,
-				66D4CD2A2AD97D1200552E0E /* UsualClassPropertyMutableExample.swift in Sources */,
-				66D4CCDC2AD6B77B00552E0E /* FunctionWithValueClassParameterExample.swift in Sources */,
-				66D4CD242AD960B000552E0E /* UsualClassConstructorExample.swift in Sources */,
-				669CC6142AEE9E2000DC4B6E /* FlowKMPNativeCoroutinesWithCancellationExample.swift in Sources */,
+				66D4CCE82AD6E26900552E0E /* SuspendFunctionsWithKMPNativeCoroutinesExample.swift in Sources */,
+				66D4CCE62AD6DDC400552E0E /* SuspendFunctionsExample.swift in Sources */,
+				66D4CD082AD9173F00552E0E /* ConstructorsWithDefaultArgumentsExample.swift in Sources */,
+				66D4CD242AD960B000552E0E /* ConstructorsExample.swift in Sources */,
 				66D4CD0E2AD9225000552E0E /* ExtensionFunctionOverUsualClassExample.swift in Sources */,
 				66D4CD3C2ADB50F200552E0E /* UnitNothingExample.swift in Sources */,
 				66D4CCE22AD6BF4700552E0E /* FunctionsWithOverloadsExample2.swift in Sources */,
 				66D4CCFA2AD7F24E00552E0E /* CovariantGenericsExample.swift in Sources */,
-				66D4CD482ADD784F00552E0E /* FlowExample.swift in Sources */,
+				66D4CD482ADD784F00552E0E /* FlowsExample.swift in Sources */,
 				66D4CD362ADAC66700552E0E /* CollectionsWithCustomTypesDataExample.swift in Sources */,
 				66D4CD022AD813F700552E0E /* ReifiedFunctionsExample.swift in Sources */,
-				7535496C2AE1376C0016A54B /* InteropSamples.swift in Sources */,
 				669CC6162AEF9B4000DC4B6E /* CollectionsWithBasicTypesExample.swift in Sources */,
 				66D4CD382ADACB4B00552E0E /* CollectionsWithBasicTypesExample.swift in Sources */,
-				66CD09102A790BEC00D66EFD /* InnerClass.swift in Sources */,
+				66CD09102A790BEC00D66EFD /* InnerClassesExample.swift in Sources */,
 				66D4CD4C2ADEA4C000552E0E /* ExceptionsExample.swift in Sources */,
 				66D4CCF82AD7EF7600552E0E /* ContravariantGenericsExample.swift in Sources */,
 				66D4CD3A2ADAD3B200552E0E /* MutableImmutableCollectionsExample.swift in Sources */,
 				7535496A2AE116ED0016A54B /* ResultView.swift in Sources */,
 				669CC6202AEFA0CB00DC4B6E /* SuspendFunctionCompletionHandlerExample.swift in Sources */,
-				66D4CCDE2AD6BB2C00552E0E /* FunctionWithVarargParameterExample.swift in Sources */,
-				665A18972A961812000087BE /* FunctionReturnsPrimitive.swift in Sources */,
+				66D4CCDE2AD6BB2C00552E0E /* FunctionsWithVarargParameterExample.swift in Sources */,
 				66D4CD402ADB5A8200552E0E /* OptionalBasicTypesExample.swift in Sources */,
 				66D4CD042AD81B6F00552E0E /* StarProjectionExample.swift in Sources */,
 				66D4CCFE2AD80F2B00552E0E /* GenericFunctionsExample.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
-				E59830997CE3DC9E31D1E9C1 /* ObjCNameExample.swift in Sources */,
-				E598319E705FEB827303DCB9 /* ShouldRefineInSwiftExample.swift in Sources */,
+				E59839ED4A52E3A918076779 /* InteropSamples.swift in Sources */,
+				E598313BBDC59D482C2E61B7 /* HiddenFromSwiftExample.swift in Sources */,
+				E5983FE321C7FE26A5AD200E /* ObjCNameExample.swift in Sources */,
+				E59835C553F2C4A4A740AC15 /* ShouldRefineInSwiftExample.swift in Sources */,
+				E598356C750A7933F0EFBF35 /* ClassesAndFunctionsExample.swift in Sources */,
+				E5983ED5F81A85F95F863166 /* CompanionObjectsExample.swift in Sources */,
+				E59835ACF7FA6D9C37C6C10B /* SealedClassesExample.swift in Sources */,
+				E598359DF6FA6495636AABE0 /* AbstractClassesExample.swift in Sources */,
+				E598357FCF25263BB63E408A /* ReadOnlyMemberPropertiesExample.swift in Sources */,
+				E5983273E9E4DA87612FBD1D /* MutableMemberPropertiesExample.swift in Sources */,
+				E598339361209D951BEDEE11 /* TopLevelValPropertiesExample.swift in Sources */,
+				E59830209A4DFDBD56B4D98A /* TopLevelMutableVarPropertiesExample.swift in Sources */,
+				E5983847097C31DF6668B125 /* FunctionsExpectingLambdaArgumentsExample.swift in Sources */,
+				E59834F3942F1913855C91A1 /* FunctionsReturningFunctionTypeExample.swift in Sources */,
+				E59839542E430C76A5568163 /* FunctionsWithReceivers.swift in Sources */,
+				E5983D79232C697E96E1ADF2 /* FunctionsWithValueClassParametersExample.swift in Sources */,
+				E5983983EC6ED4078DEC1974 /* ExtensionPropertyOnPlatformClassExample.swift in Sources */,
+				E5983A571DEB439D81E1FF66 /* ExtensionPropertyOnUsualClassExample.swift in Sources */,
+				E5983E28FAD1444B676E5CAA /* ExtensionPropertyOverCompanionObjectOnPlatformClassExample.swift in Sources */,
+				66FD7CEB2B1F6C9E0091EBCD /* CancellationOfFlowsWithKMPNativeCoroutinesExample.swift in Sources */,
+				E5983A85FF44D72575E56B9F /* CancellationOfSuspendFunctionsWithKMPNativeCoroutinesExample.swift in Sources */,
+				E598312D66A5A0D4DFB0B288 /* FlowsWithKMPNativeCoroutinesExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

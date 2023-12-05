@@ -1,8 +1,6 @@
 import Foundation
 import shared
 
-class ExtensionFunctionOverUsualClassExample {
-    func example() {
-        UsualClass().extensionFunction()
-    }
+func extensionFunctionOverUsualClassExample(){
+    UsualClass().extensionFunction()
 }

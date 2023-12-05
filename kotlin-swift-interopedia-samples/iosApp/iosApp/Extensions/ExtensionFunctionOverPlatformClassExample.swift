@@ -1,8 +1,6 @@
 import Foundation
 import shared
 
-class ExtensionFunctionOverPlatformClassExample {
-    func example(){
-        ExtensionFunctionOverPlatformClassKt.extensionFunctionOverStringClass("123")
-    }
+func extensionFunctionOverPlatformClassExample(){
+    ExtensionFunctionOverPlatformClassKt.extensionFunctionOverStringClass("123")
 }

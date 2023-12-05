@@ -34,7 +34,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/pamelahill/StudioProjects/kotlin-swift-interopedia000/kotlin-swift-interopedia-samples"
+      customWorkingDirectory = "/Users/pamelahill/fleet/kotlin-swift-interopedia/kotlin-swift-interopedia-samples"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
