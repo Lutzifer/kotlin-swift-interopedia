@@ -44,9 +44,9 @@ func overviewSection() -> InteropSection {
         },
         InteropSample(
             title: "Types",
-            description: "TODO"
+            description: "Simple types and custom types can be passed as arguments and returned from function calls."
         ) {
-
+            typesExample()
         },
         InteropSample(
             title: "Collections",
