@@ -4,7 +4,7 @@ Simple types and custom types can be passed as arguments and returned from funct
 
 ### Explanations
 
-Simple types are types such as Strings and primitives (like numbers, booleans, and characters). Simple types and custom types can be passed as arguments and returned from function calls. This topic is further expanded in the [Types]("/README.md#types") section.
+Simple types are types such as Strings and primitives (like numbers, booleans, and characters). Simple types and custom types can be passed as arguments and returned from function calls. This topic is further expanded in the [Types](/README.md#types) section.
 
 In Kotlin:
 ```kotlin
