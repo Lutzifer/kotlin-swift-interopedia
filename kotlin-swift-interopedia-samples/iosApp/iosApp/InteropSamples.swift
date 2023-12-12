@@ -50,8 +50,10 @@ func overviewSection() -> InteropSection {
         },
         InteropSample(
             title: "Collections",
-            description: "TODO"
+            description: "Kotlin and Swift have very similar kinds of collections and can be mapped between each other."
         ) {
+            getCollectionsExample()
+            setCollectionsExample()
         },
         InteropSample(
             title: "Exceptions",

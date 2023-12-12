@@ -10,12 +10,13 @@
 		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
+		66E0D9662B275FB00006EB40 /* TypesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E0D9652B275FB00006EB40 /* TypesExample.swift */; };
+		66E0D9682B285DBE0006EB40 /* CollectionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E0D9672B285DBE0006EB40 /* CollectionsExample.swift */; };
 		66E6AB092B270B1300312B3A /* InteropSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6AAB72B270B1300312B3A /* InteropSamples.swift */; };
 		66E6AB0A2B270B1300312B3A /* InlineFunctionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6AAB92B270B1300312B3A /* InlineFunctionsExample.swift */; };
 		66E6AB0B2B270B1300312B3A /* FunctionsWithValueClassParametersExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6AABA2B270B1300312B3A /* FunctionsWithValueClassParametersExample.swift */; };
 		66E6AB0C2B270B1300312B3A /* FunctionsWithVarargParameterExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6AABB2B270B1300312B3A /* FunctionsWithVarargParameterExample.swift */; };
 		66E6AB0D2B270B1300312B3A /* FunctionsExpectingLambdasWithReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6AABC2B270B1300312B3A /* FunctionsExpectingLambdasWithReceiver.swift */; };
-		66E6AB0E2B270B1300312B3A /* DefaultArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6AABD2B270B1300312B3A /* DefaultArguments.swift */; };
 		66E6AB0F2B270B1300312B3A /* FunctionsWithOverloadsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6AABE2B270B1300312B3A /* FunctionsWithOverloadsExample.swift */; };
 		66E6AB102B270B1300312B3A /* FunctionsWithReceivers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6AABF2B270B1300312B3A /* FunctionsWithReceivers.swift */; };
 		66E6AB112B270B1300312B3A /* FunctionsWithOverloadsExample2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6AAC02B270B1300312B3A /* FunctionsWithOverloadsExample2.swift */; };
@@ -45,7 +46,6 @@
 		66E6AB292B270B1300312B3A /* ReifiedFunctionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6AADB2B270B1300312B3A /* ReifiedFunctionsExample.swift */; };
 		66E6AB2B2B270B1300312B3A /* CovariantGenericsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6AADD2B270B1300312B3A /* CovariantGenericsExample.swift */; };
 		66E6AB2C2B270B1300312B3A /* GenericsClassesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6AADE2B270B1300312B3A /* GenericsClassesExample.swift */; };
-		66E6AB2D2B270B1300312B3A /* FunctionsWithLambdaArgsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6AAE02B270B1300312B3A /* FunctionsWithLambdaArgsExample.swift */; };
 		66E6AB2E2B270B1300312B3A /* TopLevelMutableVarPropertiesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6AAE12B270B1300312B3A /* TopLevelMutableVarPropertiesExample.swift */; };
 		66E6AB2F2B270B1300312B3A /* MemberFunctionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6AAE22B270B1300312B3A /* MemberFunctionsExample.swift */; };
 		66E6AB302B270B1300312B3A /* MutableMemberPropertiesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6AAE32B270B1300312B3A /* MutableMemberPropertiesExample.swift */; };
@@ -91,12 +91,13 @@
 		058557BA273AAA24004C7B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
+		66E0D9652B275FB00006EB40 /* TypesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesExample.swift; sourceTree = "<group>"; };
+		66E0D9672B285DBE0006EB40 /* CollectionsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsExample.swift; sourceTree = "<group>"; };
 		66E6AAB72B270B1300312B3A /* InteropSamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteropSamples.swift; sourceTree = "<group>"; };
 		66E6AAB92B270B1300312B3A /* InlineFunctionsExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InlineFunctionsExample.swift; sourceTree = "<group>"; };
 		66E6AABA2B270B1300312B3A /* FunctionsWithValueClassParametersExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsWithValueClassParametersExample.swift; sourceTree = "<group>"; };
 		66E6AABB2B270B1300312B3A /* FunctionsWithVarargParameterExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsWithVarargParameterExample.swift; sourceTree = "<group>"; };
 		66E6AABC2B270B1300312B3A /* FunctionsExpectingLambdasWithReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsExpectingLambdasWithReceiver.swift; sourceTree = "<group>"; };
-		66E6AABD2B270B1300312B3A /* DefaultArguments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultArguments.swift; sourceTree = "<group>"; };
 		66E6AABE2B270B1300312B3A /* FunctionsWithOverloadsExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsWithOverloadsExample.swift; sourceTree = "<group>"; };
 		66E6AABF2B270B1300312B3A /* FunctionsWithReceivers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsWithReceivers.swift; sourceTree = "<group>"; };
 		66E6AAC02B270B1300312B3A /* FunctionsWithOverloadsExample2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsWithOverloadsExample2.swift; sourceTree = "<group>"; };
@@ -126,7 +127,6 @@
 		66E6AADB2B270B1300312B3A /* ReifiedFunctionsExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReifiedFunctionsExample.swift; sourceTree = "<group>"; };
 		66E6AADD2B270B1300312B3A /* CovariantGenericsExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CovariantGenericsExample.swift; sourceTree = "<group>"; };
 		66E6AADE2B270B1300312B3A /* GenericsClassesExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericsClassesExample.swift; sourceTree = "<group>"; };
-		66E6AAE02B270B1300312B3A /* FunctionsWithLambdaArgsExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsWithLambdaArgsExample.swift; sourceTree = "<group>"; };
 		66E6AAE12B270B1300312B3A /* TopLevelMutableVarPropertiesExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopLevelMutableVarPropertiesExample.swift; sourceTree = "<group>"; };
 		66E6AAE22B270B1300312B3A /* MemberFunctionsExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberFunctionsExample.swift; sourceTree = "<group>"; };
 		66E6AAE32B270B1300312B3A /* MutableMemberPropertiesExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableMemberPropertiesExample.swift; sourceTree = "<group>"; };
@@ -206,7 +206,6 @@
 				66E6AABA2B270B1300312B3A /* FunctionsWithValueClassParametersExample.swift */,
 				66E6AABB2B270B1300312B3A /* FunctionsWithVarargParameterExample.swift */,
 				66E6AABC2B270B1300312B3A /* FunctionsExpectingLambdasWithReceiver.swift */,
-				66E6AABD2B270B1300312B3A /* DefaultArguments.swift */,
 				66E6AABE2B270B1300312B3A /* FunctionsWithOverloadsExample.swift */,
 				66E6AABF2B270B1300312B3A /* FunctionsWithReceivers.swift */,
 				66E6AAC02B270B1300312B3A /* FunctionsWithOverloadsExample2.swift */,
@@ -263,7 +262,6 @@
 		66E6AADF2B270B1300312B3A /* FunctionsAndProperties */ = {
 			isa = PBXGroup;
 			children = (
-				66E6AAE02B270B1300312B3A /* FunctionsWithLambdaArgsExample.swift */,
 				66E6AAE12B270B1300312B3A /* TopLevelMutableVarPropertiesExample.swift */,
 				66E6AAE22B270B1300312B3A /* MemberFunctionsExample.swift */,
 				66E6AAE32B270B1300312B3A /* MutableMemberPropertiesExample.swift */,
@@ -281,21 +279,15 @@
 			children = (
 				66E6AAEA2B270B1300312B3A /* PublicApiExample.swift */,
 				66E6AAEB2B270B1300312B3A /* ObjCNameExample.swift */,
-				66E6AAEC2B270B1300312B3A /* HiddenFromSwiftExample */,
 				66E6AAED2B270B1300312B3A /* ClassesAndFunctionsExample.swift */,
 				66E6AAEE2B270B1300312B3A /* TopLevelFunctionsExample.swift */,
 				66E6AAEF2B270B1300312B3A /* HiddenFromSwiftExample.swift */,
 				66E6AAF02B270B1300312B3A /* ExceptionsExample.swift */,
 				66E6AAF12B270B1300312B3A /* ShouldRefineInSwiftExample.swift */,
+				66E0D9652B275FB00006EB40 /* TypesExample.swift */,
+				66E0D9672B285DBE0006EB40 /* CollectionsExample.swift */,
 			);
 			path = Overview;
-			sourceTree = "<group>";
-		};
-		66E6AAEC2B270B1300312B3A /* HiddenFromSwiftExample */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HiddenFromSwiftExample;
 			sourceTree = "<group>";
 		};
 		66E6AAF32B270B1300312B3A /* Classes */ = {
@@ -615,10 +607,8 @@
 				66E6AB222B270B1300312B3A /* CancellationOfFlowsWithKMPNativeCoroutinesExample.swift in Sources */,
 				66E6AB412B270B1300312B3A /* FunInterfacesExample.swift in Sources */,
 				66E6AB2C2B270B1300312B3A /* GenericsClassesExample.swift in Sources */,
-				66E6AB0E2B270B1300312B3A /* DefaultArguments.swift in Sources */,
 				66E6AB2E2B270B1300312B3A /* TopLevelMutableVarPropertiesExample.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
-				66E6AB2D2B270B1300312B3A /* FunctionsWithLambdaArgsExample.swift in Sources */,
 				66E6AB172B270B1300312B3A /* ExtensionPropertyOverCompanionObjectOnPlatformClassExample.swift in Sources */,
 				66E6AB1F2B270B1300312B3A /* FlowsWithKMPNativeCoroutinesExample.swift in Sources */,
 				66E6AB492B270B1300312B3A /* SealedInterfacesExample.swift in Sources */,
@@ -631,6 +621,7 @@
 				66E6AB342B270B1300312B3A /* TopLevelValPropertiesExample.swift in Sources */,
 				66E6AB3C2B270B1300312B3A /* ShouldRefineInSwiftExample.swift in Sources */,
 				66E6AB202B270B1300312B3A /* SuspendFunctionsWithKMPNativeCoroutinesExample.swift in Sources */,
+				66E0D9682B285DBE0006EB40 /* CollectionsExample.swift in Sources */,
 				66E6AB402B270B1300312B3A /* ObjectsExample.swift in Sources */,
 				66E6AB1E2B270B1300312B3A /* CancellationOfSuspendFunctionsExample.swift in Sources */,
 				66E6AB152B270B1300312B3A /* ExtensionPropertyOverCompanionObjectOfUsualClassExample.swift in Sources */,
@@ -649,6 +640,7 @@
 				66E6AB1B2B270B1300312B3A /* CancellationOfSuspendFunctionsWithKMPNativeCoroutinesExample.swift in Sources */,
 				66E6AB0D2B270B1300312B3A /* FunctionsExpectingLambdasWithReceiver.swift in Sources */,
 				66E6AB312B270B1300312B3A /* ReadOnlyMemberPropertiesExample.swift in Sources */,
+				66E0D9662B275FB00006EB40 /* TypesExample.swift in Sources */,
 				66E6AB1D2B270B1300312B3A /* CancellationOfFlowsExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
