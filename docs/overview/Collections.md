@@ -39,10 +39,10 @@ fun set(collection: List<Int>){
 
 In Swift:
 ```swift
-print(CollectionsKt.getList())
-print(CollectionsKt.getArray())
-print(CollectionsKt.getMap())
-print(CollectionsKt.getSet())
+let a: Array<KotlinInt> = CollectionsKt.getList()
+let a2: KotlinArray<KotlinInt> = CollectionsKt.getArray()
+let d: Dictionary<String, KotlinInt> = CollectionsKt.getMap()
+let s: Set<KotlinInt> = CollectionsKt.getSet()
 CollectionsKt.set(collection: [1,2,3])
 ```
 

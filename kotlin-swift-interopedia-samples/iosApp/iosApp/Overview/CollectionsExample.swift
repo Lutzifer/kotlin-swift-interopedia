@@ -2,10 +2,14 @@ import Foundation
 import shared
 
 func getCollectionsExample(){
-    print(CollectionsKt.getList())
-    print(CollectionsKt.getArray())
-    print(CollectionsKt.getMap())
-    print(CollectionsKt.getSet())
+    let a: Array<KotlinInt> = CollectionsKt.getList()
+    print(a)
+    let a2: KotlinArray<KotlinInt> = CollectionsKt.getArray()
+    print(a2)
+    let d: Dictionary<String, KotlinInt> = CollectionsKt.getMap()
+    print(d)
+    let s: Set<KotlinInt> = CollectionsKt.getSet()
+    print(s)
 }
 
 func setCollectionsExample(){
