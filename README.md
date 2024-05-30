@@ -8,9 +8,7 @@ Kotlin/Native provides bidirectional interoperability with Objective-C. Kotlin i
 <li>It allows all iOS projects (written in Objective-C or Swift) to use shared Kotlin code</li>
 <li>When the decision was made, Swift was still on the road to maturity and mainstream adoption.</li>
 </ul>
-The Kotlin/Native compiler generates Objective-C headers, which Swift code can import.
-
-This has the following implications for Swift development:
+The Kotlin/Native compiler generates Objective-C headers, which Swift code can import. This has the following implications for Swift development:
 <ul>
 <li>Some features work exactly as expected</li>
 <li>Some features work with a small workaround</li>
