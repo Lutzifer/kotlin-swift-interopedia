@@ -134,3 +134,78 @@ You can edit the code, rerun the app, and see how the output has changed.
   <tr><td><a href="/docs/generics/Star%20projection.md">Star projection</a></td><td>Requires a type cast.</td></tr>
   <tr><td><a href="/docs/generics/Generic%20interfaces.md">Generic interfaces</a></td><td>Generic interfaces are not supported.</td></tr>  
 </table>
+
+## Feature Support Refresher
+
+### Some features work exactly as expected
+
+<ul>
+<li>Classes and functions</li>
+<li>Member properties (Readonly or Mutable)</li>
+<li>Higher-order functions (lambda as Parameter or Return)</li>
+<li>Collections with custom types</li>
+<li>Unit and Nothing</li>
+<li>Abstract classes</li>
+<li>Open classes</li>
+<li>Interfaces</li>
+<li>Extension function over usual class</li>
+<li>Extension properties over usual class</li>
+</ul>
+
+### Some features work with a small workaround
+
+<ul>
+<li>Top-level functions</li>
+<li>Top-level properties (Read-only or Mutable)</li>
+<li>Exceptions</li>
+<li>Function overloads</li>
+<li>Functions with default arguments</li>
+<li>Functions expecting lambda with receiver</li>
+<li>Functions with receivers</li>
+<li>Basic types</li>
+<li>Optional basic types</li>
+<li>Collections with basic types</li>
+<li>Mutable / immutable collections</li>
+<li>Enum classes</li>
+<li>Inner classes</li>
+<li>Sealed classes</li>
+<li>Objects</li>
+<li>Companion objects</li>
+<li>Sealed interfaces</li>
+<li>Extension function over platform class</li>
+<li>Extension properties over platform class</li>
+<li>Extension properties for companion object of usual class</li>
+</ul>
+
+### Some features work better with a community solution
+
+<ul>
+<li>Suspend functions</li>                   
+<li>Flows</li>
+</ul>
+
+### Some features don’t work optimally right now (use with care)
+
+<ul>
+<li>Data classes</li>
+<li>Generic classes</li>
+<li>Generic functions</li>
+<li>Contravariant generics</li>
+<li>Covariant generics</li>
+<li>Star projections</li>
+</ul>
+
+### Some features don’t work (don’t use)
+
+<ul>
+<li>Functions with value class parameter</li>
+<li>Functions with a vararg parameter</li>
+<li>Inline functions</li>
+<li>Annotations</li>
+<li>Inline classes</li>
+<li>Fun interfaces</li>
+<li>Extension properties for companion object of platform class</li>
+<li>Bounded generics</li>
+<li>Reified functions</li>
+<li>Generic interfaces</li>
+</ul>
