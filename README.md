@@ -2,12 +2,24 @@
 
 # Kotlin-Swift interopedia
 
-## Introduction
-Kotlin/Native provides bidirectional interoperability with Objective-C. At the time of writing, Kotlin is not directly interoperable with Swift but rather indirectly via an Objective-C bridge. Swift export is something that the Kotlin/Native team intends to address in future. However, the reason for choosing to start with Objective-C is sound: older projects containing Objective-C code can also call shared Kotlin code, along with projects containing Swift code.
+## Overview
+Kotlin/Native provides bidirectional interoperability with Objective-C. Kotlin is not directly interoperable with Swift but rather indirectly via an Objective-C bridge. The reason for this is twofold:
+<ul>
+<li>It allows all iOS projects (written in Objective-C or Swift) to use shared Kotlin code</li>
+<li>When the decision was made, Swift was still on the road to maturity and mainstream adoption.</li>
+</ul>
+The Kotlin/Native compiler generates Objective-C headers, which Swift code can import.
 
-In general, the basics of the Kotlin language such as classes, properties, and functions can be easily used from Swift. However, some other language features may not be as readily used. This interoperability encyclopedia (or “interopedia”) aims to explain how shared Kotlin code using various language features can be called from Swift. When there is no straightforward way to do so, we discuss workarounds and library solutions, if available.
+This has the following implications for Swift development:
+<ul>
+<li>Some features work exactly as expected</li>
+<li>Some features work with a small workaround</li>
+<li>Some features work better with a community solution</li>
+<li>Some features don’t work optimally right now</li>
+<li>Some features don’t work</li>
+</ul>
 
-In order to provide the best possible experience for Swift developers, the rule of thumb is that using the simplest language features is best. Kotlin developers may not be expert Swift developers as well, so collaboration with their Swift teammates is required so that Kotlin developers can create shared Kotlin APIs that can be called in a beautifully idiomatic way.
+<table><tr><td>Swift export, where the Kotlin API is directly exported as Swift declarations instead of Objective-C headers, is something that the Kotlin team is currently working on, and will resolve some of the difficulties experienced by Swift developers when consuming shared Kotlin code.</td></tr></table>
 
 ## How to use
 ### Interopedia
